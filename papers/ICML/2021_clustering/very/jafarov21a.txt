@@ -1,0 +1,15 @@
+{
+  "title": "Local Correlation Clustering with Asymmetric Classification Errors",
+  "summary": "This paper tackles a variant of the Correlation Clustering problem where objects are grouped based on noisy pairwise similarity information. It proposes minimizing the ℓₚ norm of the disagreement vector, focusing on reducing errors locally at each node rather than only globally. They model asymmetric classification errors, where positive and negative relationships have different weight ranges, and design a convex relaxation combined with a novel metric-space partitioning algorithm. Their method achieves strong polynomial-time approximation guarantees independent of the dataset size, providing robust clustering in noisy settings.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to designing SNP clustering algorithms for Mendelian randomisation. It directly addresses clustering under noisy pairwise similarity data and focuses on minimizing local error — crucial for detecting and isolating noise clusters among SNPs. The handling of asymmetric weights mirrors the varying confidence in SNP association statistics, making it a strong conceptual and methodological fit. Techniques from the paper could be adapted to define a specialized SNP clustering method that is robust to noise and can provide cluster-level instruments for causal inference.",
+  "key_points": [
+    "Models clustering under noisy binary similarity/dissimilarity labels with variable edge weights.",
+    "Focuses on minimizing ℓₚ norms (especially ℓ₂ and ℓ∞) of local disagreement vectors rather than global sums.",
+    "Designs a new metric-space partitioning algorithm supporting strong worst-case guarantees.",
+    "Provides polynomial-time algorithms with approximation bounds dependent only on the noise parameter α.",
+    "Convex relaxation formulation that leads to practical and scalable rounding algorithms.",
+    "Handles asymmetric errors naturally, matching real-world imbalance between true associations and false positives/negatives.",
+    "Relevant for clustering SNPs based on beta/Z-scores while accounting for different confidence levels across SNPs."
+  ]
+}

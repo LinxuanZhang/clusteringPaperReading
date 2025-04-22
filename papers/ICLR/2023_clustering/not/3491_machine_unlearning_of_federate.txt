@@ -1,0 +1,15 @@
+{
+  "title": "Machine Unlearning of Federated Clusters",
+  "summary": "This paper introduces a framework for federated clustering (FC) that supports efficient and secure machine unlearning. They propose Secure Compressed Multiset Aggregation (SCMA) to aggregate client cluster information without leaking private data, and show that efficient clustering and unlearning can be achieved without full retraining. They use K-means++ initialization at clients, secure aggregation, and weighted clustering at the server, and prove strong theoretical performance guarantees. Their method achieves an 84× speed-up over retraining and handles imbalanced clusters well. Datasets include genetic and microbiome data, showcasing relevance to biological applications.",
+  "classification": "Very helpful",
+  "relevance": "The techniques for efficient, privacy-preserving clustering, fast unlearning, and handling unbalanced cluster structures are directly applicable to SNP clustering based on beta/Z-scores. The methods can help identify meaningful SNP groups while allowing dynamic updates and noise removal, which are key goals for constructing reliable instruments for Mendelian randomization.",
+  "key_points": [
+    "Secure Compressed Multiset Aggregation (SCMA) for privacy-preserving data aggregation.",
+    "K-means++ initialization at clients, full clustering at the server.",
+    "Fast machine unlearning mechanism avoiding full retraining.",
+    "Handles imbalanced clusters effectively.",
+    "84× average speed-up over retraining for unlearning requests.",
+    "Application to real biological datasets (TCGA methylation, microbiome).",
+    "Theoretical guarantees for clustering performance and unlearning complexity."
+  ]
+}

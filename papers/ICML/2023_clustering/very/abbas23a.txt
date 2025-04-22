@@ -1,0 +1,17 @@
+{
+  "title": "ClusterFuG: Clustering Fully Connected Graphs by Multicut",
+  "summary": "This paper introduces a method for efficiently clustering fully connected graphs, using a dense multicut approach based on feature vector inner products. By replacing explicit edge storage with on-demand similarity computation and using scalable greedy contraction algorithms over k-nearest neighbor graphs, they achieve significant improvements in memory, speed, and scalability. Their method infers the number of clusters automatically and can isolate noise by adjusting an affinity strength parameter. Applications to image segmentation and large-scale clustering (like ImageNet) show competitive or superior performance compared to classical methods like k-means.",
+  "classification": "Very helpful",
+  "relevance": "The proposed dense multicut approach is highly suited for clustering SNPs using their association strengths (like beta or Z-scores), especially in causal inference contexts like Mendelian randomization. It can handle large datasets without needing pre-defined cluster numbers and can be tuned to separate strong from weak signals, which fits perfectly with the need to isolate 'noise clusters' capturing spurious signals.",
+  "key_points": [
+    "Dense multicut formulation using inner products of feature vectors",
+    "Greedy Additive Edge Contraction (GAEC) adapted for dense graphs",
+    "Efficient scaling using nearest-neighbor sparsification and incremental updates",
+    "Affinity strength tuning (α) to favor small or large clusters, useful for noise handling",
+    "No need to predefine the number of clusters",
+    "Open-source code available at https://github.com/aabbas90/cluster-fug",
+    "Empirical validation on ImageNet clustering and Cityscapes panoptic segmentation",
+    "Potential for extension to incorporate biological priors into clustering"
+  ],
+  "additional_notes": "The dense multicut approach could be a strong foundation for a specialized SNP clustering tool that identifies meaningful groups for use in Mendelian randomization, while also isolating clusters dominated by noise or weak signals."
+}

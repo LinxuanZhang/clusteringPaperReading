@@ -1,0 +1,15 @@
+{
+  "title": "A Cluster-based Approach for Improving Isotropy in Contextual Embedding Space",
+  "summary": "This paper proposes a cluster-based method to improve the isotropy (uniformity) of contextual embeddings from models like BERT and GPT-2. It first clusters embeddings using K-means, then applies PCA within each cluster to remove dominant directions. The method improves the spread of embeddings and sometimes leads to better performance on semantic tasks. Although focused on NLP, the methodology could inspire clustering strategies for SNP data.",
+  "classification": "Likely helpful",
+  "relevance": "The idea of using clustering before noise adjustment (PCA-based removal of dominant components) can be adapted to clustering SNPs by their association statistics (e.g., beta or Z-scores). This could help identify coherent groups of SNPs while isolating noise clusters. However, the paper does not directly address causal inference or Mendelian Randomization contexts, so additional modeling would be necessary.",
+  "key_points": [
+    "Introduces a cluster-based method using K-means and PCA to improve isotropy.",
+    "Shows local isotropy enhancement often outperforms global methods for embeddings.",
+    "Deals explicitly with noise and structured redundancy in data representations.",
+    "Reproducibility challenges indicate care is needed with hyperparameters and clustering size.",
+    "Open-source code available at https://github.com/Sara-Rajaee/clusterbased_isotropy_enhancement.",
+    "Findings could inspire strategies for clustering numeric feature vectors like SNP effects."
+  ],
+  "additional_notes": "While developed for text embeddings, the concept of local structure correction could be translated to genomic datasets by treating SNPs' beta/Z-scores as feature vectors to cluster and clean."
+}

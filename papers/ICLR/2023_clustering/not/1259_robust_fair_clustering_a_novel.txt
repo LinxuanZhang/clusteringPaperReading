@@ -1,0 +1,13 @@
+{
+  "title": "Robust Fair Clustering: A Novel Fairness Attack and Defense Framework",
+  "summary": "This paper investigates whether existing fair clustering algorithms are vulnerable to adversarial attacks that degrade fairness without harming clustering accuracy. It introduces a novel black-box fairness attack by perturbing protected group memberships and shows that state-of-the-art fair clustering algorithms are highly vulnerable. To counter this, they propose Consensus Fair Clustering (CFC), a robust method that transforms consensus clustering into a fair graph partitioning problem, combining self-supervised contrastive learning and fairness loss to resist attacks. CFC outperforms traditional methods under adversarial conditions across multiple datasets.",
+  "classification": "Likely helpful",
+  "relevance": "Although the paper is centered on fairness in clustering demographic groups, the techniques for robust clustering against perturbations are conceptually relevant to clustering SNPs with noisy beta/Z-scores. Especially, the consensus clustering framework and noise-resilient embedding learning strategies could inspire approaches for identifying real SNP clusters versus noise clusters. Direct application is limited because the original work does not address SNPs or association measures.",
+  "key_points": [
+    "Introduced a novel black-box attack that perturbs protected group labels to degrade fairness in clustering.",
+    "Proposed Consensus Fair Clustering (CFC), a two-stage defense using consensus clustering and graph-based learning.",
+    "Demonstrated robustness of CFC across real-world datasets compared to existing fair clustering models.",
+    "Utilized self-supervised contrastive loss and fairness regularization to build resilient cluster embeddings.",
+    "Techniques could inspire SNP clustering designs robust to biological noise and unstable association signals."
+  ]
+}

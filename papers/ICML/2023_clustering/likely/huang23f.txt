@@ -1,0 +1,14 @@
+{
+  "title": "Fast Algorithms for Distributed k-Clustering with Outliers",
+  "summary": "This paper introduces two fast sampling-based algorithms for distributed k-clustering with outliers: Inliers-Recalling Sampling and Space-Narrowing Sampling. These algorithms achieve constant-factor bi-criteria approximations (good clustering quality while allowing a small fraction of outliers), minimize communication costs between machines, and reduce local computation time to be linear in the data size. By removing dependence on difficult-to-estimate parameters like aspect ratio and using adaptive sampling, the methods show strong theoretical guarantees and practical improvements on large real-world datasets compared to previous algorithms.",
+  "classification": "Likely helpful",
+  "relevance": "Although the paper focuses on distributed k-clustering in metric spaces, its robust strategies for outlier management, sampling, and adaptive approximation can inform SNP clustering designs. Especially relevant are the methods for dealing with noisy data points (analogous to spurious SNPs) and designing scalable, efficient clustering pipelines. However, the algorithms would need adaptation to handle SNP association measures (beta/Z-scores) instead of spatial data points.",
+  "key_points": [
+    "Proposes Inliers-Recalling Sampling for robust outlier handling without aspect ratio dependence.",
+    "Proposes Space-Narrowing Sampling for faster two-round distributed clustering.",
+    "Achieves bi-criteria constant-factor approximation guarantees for k-center, k-median, and k-means with outliers.",
+    "Focuses on distributed settings, emphasizing communication and computational efficiency.",
+    "Experiments show significant gains in speed and communication efficiency over previous methods.",
+    "Strategies for adaptive sampling and outlier recovery could inspire robust SNP clustering algorithms."
+  ]
+}

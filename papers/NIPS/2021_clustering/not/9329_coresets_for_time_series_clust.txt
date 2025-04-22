@@ -1,0 +1,15 @@
+{
+  "title": "Coresets for Time Series Clustering",
+  "summary": "This paper develops an algorithm (CRGMM) to construct small coresets for clustering large time series datasets generated from Gaussian Mixture Models with autocorrelations. The algorithm reduces the clustering problem to a k-means formulation using average observations and applies two-stage importance sampling to select representative entity-time pairs. The coresets achieve theoretical approximation guarantees and demonstrate large computational and storage savings (14x-171x speedup) without significant loss in clustering quality compared to full datasets.",
+  "classification": "Likely helpful",
+  "relevance": "Although the paper focuses on time series data with temporal autocorrelations rather than SNP data, its coreset methodology — including sensitivity-based sampling and efficient subset selection — is highly relevant for managing the massive scale of SNP clustering tasks. Techniques for reducing dataset size while preserving clustering quality could be adapted to SNP effect size vectors, though specific modifications would be needed to handle genomic correlation structures (like LD) and noise cluster detection.",
+  "key_points": [
+    "First coreset method for clustering time series with Gaussian mixtures and autocorrelations",
+    "Reduces full clustering problem to a k-means problem on averaged entity observations",
+    "Two-stage importance sampling to select small, representative subsets",
+    "Provides theoretical approximation guarantees on clustering quality",
+    "Coreset size independent of number of entities or time points, only depends on k, d, and 1/ε",
+    "Empirically validated: 14x-171x faster than full data clustering",
+    "Highly promising for scaling up SNP clustering tasks with necessary adaptations"
+  ]
+}

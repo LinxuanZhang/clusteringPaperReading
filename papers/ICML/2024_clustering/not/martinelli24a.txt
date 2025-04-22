@@ -1,0 +1,17 @@
+{
+  "title": "Expand-and-Cluster: Parameter Recovery of Neural Networks",
+  "summary": "This paper presents Expand-and-Cluster, a method for recovering the weights and structure of a neural network by training multiple overparameterized student networks to mimic a target (teacher) network. After training, neuron weight vectors are clustered to identify true underlying neurons, filtering out redundant or noise elements. They demonstrate that this method successfully recovers both shallow and deep networks across various activation functions, even under realistic noisy conditions. The method relies heavily on handling network symmetries and clustering based on neuron consistency.",
+  "classification": "Likely helpful",
+  "relevance": "While the paper does not deal directly with SNP clustering, its conceptual framework for identifying meaningful structure (neurons) and eliminating noise using a clustering approach after overparameterized training is highly relevant. These ideas can inform how to build robust clustering methods for SNP beta/Z-score data, particularly in distinguishing real biological signal from spurious noise clusters.",
+  "key_points": [
+    "Introduction of Expand-and-Cluster method for neural network parameter recovery",
+    "Key role of overparameterization to ease optimization landscapes",
+    "Novel clustering approach to separate true neurons from noise",
+    "Handling of activation function symmetries (even, odd, scaling effects)",
+    "Application to both synthetic data (XOR-type problems) and real-world datasets (MNIST, CIFAR-10)",
+    "Comparison to pruning methods; Expand-and-Cluster outperforms traditional pruning for parameter recovery",
+    "Potential relevance to model reverse engineering and neuroscience connectivity inference",
+    "Discussion of theoretical limitations and future directions, including scaling to larger networks"
+  ],
+  "additional_notes": "The idea of clustering consistency across multiple model trainings to identify real signals could be adapted to SNP clustering by checking for SNPs that consistently cluster across bootstrap samples or perturbations. Also, their methodology for dealing with scaling and sign ambiguity could be important if directionality is a concern for SNP effects."
+}

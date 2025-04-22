@@ -1,0 +1,15 @@
+{
+  "title": "EDISON: Enhanced Dictionary-Induced Tensorized Incomplete Multi-View Clustering with Gaussian Error Rank Minimization",
+  "summary": "The paper introduces EDISON, a robust and scalable clustering algorithm for incomplete multi-view data. It integrates an enhanced dictionary representation to infer missing data, a novel Gaussian Error Rank (GER) approximation to better preserve important tensor information while suppressing noise, and a hyper-anchor graph Laplacian regularization to capture high-order and local geometric structures. Extensive experiments show that EDISON outperforms state-of-the-art methods on various large, incomplete datasets while maintaining strong computational efficiency.",
+  "classification": "Likely helpful",
+  "relevance": "While primarily designed for multi-view data, EDISON's strategies for noise handling, low-rank modeling, and local manifold preservation offer insights that could inform SNP clustering, particularly when SNPs have multiple measures across traits or cohorts. The enhanced tensor decomposition (GER) and dictionary strategies could be adapted to improve robustness and noise filtering in SNP clustering workflows, but direct application would require significant reinterpretation of SNP data into a multi-view setting.",
+  "key_points": [
+    "Enhanced Dictionary Representation (EDR) for missing data and subspace recovery",
+    "Gaussian Error Rank (GER) for noise-robust tensor decomposition",
+    "Hyper-anchor graph Laplacian Regularization (HLR) for preserving local manifold structure",
+    "Optimization with guaranteed convergence (ADMM-based)",
+    "Superior performance over 8 strong baselines on incomplete multi-view datasets",
+    "Scalable to large datasets with low computational overhead",
+    "Strong ablation studies and robustness analyses"
+  ]
+}

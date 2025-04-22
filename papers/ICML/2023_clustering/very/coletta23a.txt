@@ -1,0 +1,17 @@
+{
+  "title": "K-SHAP: Policy Clustering Algorithm for Anonymous Multi-Agent State-Action Pairs",
+  "summary": "The paper introduces K-SHAP, a method for clustering anonymous observations into distinct agent strategies. It first learns a 'world policy' through imitation learning to predict actions from states. Then, it uses SHAP explanations to interpret individual decisions, and finally clusters these explanations via K-means to identify behaviorally coherent groups. Tested on synthetic market data and real NASDAQ data, K-SHAP outperforms baseline clustering algorithms by a large margin. The method proves effective for handling anonymous, noisy, and high-dimensional data.",
+  "classification": "Very helpful",
+  "relevance": "K-SHAP's framework for clustering based on feature attributions (SHAP values) is highly applicable to SNP clustering. It offers a way to group SNPs meaningfully by explaining the associations rather than relying purely on the raw data. Moreover, it handles noise and anonymity effectively, matching the key challenges in using SNP clusters as instruments for causal inference (Mendelian randomization).",
+  "key_points": [
+    "Uses a 'world policy' model to learn from anonymous observations (state-action pairs).",
+    "Applies SHAP (Shapley Additive Explanations) to generate local explanations for each data point.",
+    "Clusters the SHAP value space, not the raw feature space, leading to better cluster separation.",
+    "Shows strong performance improvements over classical clustering methods like k-means and ClusterGAN.",
+    "Demonstrates robustness in real-world financial data and synthetic multi-agent simulations.",
+    "Relevant for clustering settings where data points are anonymized, noisy, or heterogeneous.",
+    "Introduces a flexible three-phase framework (Imitation Learning → SHAP Explanation → Clustering).",
+    "Provides a pathway to adapt feature attribution-based clustering for genomic or SNP data."
+  ],
+  "additional_notes": "K-SHAP could inspire a powerful SNP clustering strategy where SNPs are grouped by similarity in their influence patterns rather than by raw Z-scores alone. Future work could involve customizing the world-policy and SHAP analysis to accommodate GWAS-specific structures like linkage disequilibrium (LD) and pleiotropy."
+}

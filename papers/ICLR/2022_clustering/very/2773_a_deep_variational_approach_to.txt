@@ -1,0 +1,22 @@
+{
+  "title": "A Deep Variational Approach to Clustering Survival Data",
+  "summary": "This paper introduces VaDeSC, a semi-supervised probabilistic model that clusters survival data by jointly modeling explanatory variables and censored survival outcomes using a deep variational autoencoder with a Gaussian mixture prior. Survival times are modeled with cluster-specific Weibull distributions. The model optimizes an evidence lower bound (ELBO) to efficiently learn both feature and outcome distributions. VaDeSC outperforms existing survival clustering methods on synthetic and real-world datasets, including clinical imaging data, and offers interpretable, structured clustering that reflects both covariates and outcomes.",
+  "classification": "Very helpful",
+  "relevance": "The method's core innovations — joint modeling of continuous noisy inputs with outcomes, probabilistic clustering with latent variables, and robust variational optimization — are directly applicable to clustering SNPs using beta/Z-scores for causal inference. The emphasis on detecting different underlying mechanisms rather than mere outcome differences is especially aligned with pathway identification in Mendelian randomization. With adaptation, VaDeSC could form a powerful basis for SNP clustering with noise cluster isolation.",
+  "key_points": [
+    "Proposes VaDeSC: a semi-supervised probabilistic clustering model",
+    "Uses a Gaussian Mixture Variational Autoencoder to jointly model features and outcomes",
+    "Survival outcomes are modeled with cluster-specific Weibull distributions",
+    "Handles censored data and missing outcomes robustly",
+    "Optimizes an ELBO using stochastic gradient variational inference (SGVI)",
+    "Demonstrates superior clustering performance on synthetic, semi-synthetic, and real-world datasets",
+    "Capable of discovering clusters reflecting true underlying feature-outcome mechanisms",
+    "Framework highly adaptable to high-dimensional SNP beta/Z-score data"
+  ],
+  "notes": [
+    "Would require replacing survival modeling with association modeling across traits for SNPs",
+    "Cluster-specific generative models could represent different causal pathways",
+    "Robust handling of noise and missing information mirrors SNP data characteristics",
+    "Highly scalable and interpretable architecture ideal for large-scale genomic applications"
+  ]
+}

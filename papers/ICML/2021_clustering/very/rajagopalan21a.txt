@@ -1,0 +1,16 @@
+{
+  "title": "Hierarchical Clustering of Data Streams: Scalable Algorithms and Approximation Guarantees",
+  "summary": "This paper introduces scalable, hyperplane-based hierarchical clustering (HC) algorithms that are robust to the order of incoming data. Two key methods are developed: Random Cut Tree (RCT) for L1 distances and Uniform Radial Random Hyperplane (URRH) for L2 distances. These algorithms achieve strong approximation guarantees for standard HC objectives like MW Revenue and Dasgupta Cost. Experiments on synthetic and real-world datasets show that the methods are competitive, particularly excelling in noisy data settings where they outperform traditional dynamic clustering methods like BIRCH, PERCH, and GRINCH.",
+  "classification": "Very helpful",
+  "relevance": "The hyperplane-based, noise-robust clustering methods developed in this paper are highly applicable to SNP clustering tasks, where beta/Z-score data needs to be grouped into meaningful clusters for Mendelian randomisation. The sequential robustness, dynamic scalability, and approximation guarantees are particularly useful when handling large SNP datasets and ensuring that spurious noise signals do not dominate the clustering process.",
+  "key_points": [
+    "Introduces Random Cut Tree (RCT) and Uniform Radial Random Hyperplane (URRH) algorithms for dynamic hierarchical clustering.",
+    "Focuses on optimizing HC quality metrics like MW Revenue, CKMM Revenue, Dasgupta Cost, and MW Cost.",
+    "Sequential property ensures clustering results are order-invariant — critical for dynamic datasets.",
+    "Approximation guarantees: 0.9-approximation for CKMM Revenue, 2-approximation for MW Cost, etc.",
+    "Experimental validation on real datasets (MNIST, ImageNet, etc.) and synthetic noisy datasets.",
+    "RCT/URRH outperform traditional methods in noisy environments.",
+    "Provides a general hyperplane-based HC framework adaptable to various metrics.",
+    "Potential adaptation for SNP beta/Z-score space clustering."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Coresets for Clustering with Missing Values",
+  "summary": "This paper presents efficient algorithms for constructing coresets — small, weighted subsets of data — that approximate clustering objectives (such as k-means or k-median) even when the data contains missing values. Their method avoids the need for data imputation, uses importance sampling, and dynamically constructs coresets based on observed dimensions. They prove strong theoretical guarantees and demonstrate empirical improvements over baselines, achieving accurate clustering with major speedups on large, real-world datasets.",
+  "classification": "Very helpful",
+  "relevance": "The paper is highly relevant to SNP clustering for Mendelian randomization. SNP data often has missing effect size estimates across traits or cohorts, making this robust approach to clustering under missingness directly applicable. The idea of constructing small, high-fidelity coresets can also help in efficiently identifying clusters of SNPs that serve as meaningful instruments, even when some SNP associations are missing or noisy.",
+  "key_points": [
+    "First coreset construction for clustering with multiple missing values",
+    "Near-linear time algorithm based on importance sampling and dynamic Gonzalez’s algorithm",
+    "Avoids imputation; computes distances only over observed dimensions",
+    "Robust to missing data without strong assumptions",
+    "Significant speedup (5x or more) over full-data clustering",
+    "Empirical validation across real and synthetic datasets",
+    "Potentially adaptable to SNP-level clustering for causal inference"
+  ]
+}

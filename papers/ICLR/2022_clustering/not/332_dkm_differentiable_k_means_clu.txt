@@ -1,0 +1,19 @@
+{
+  "title": "DKM: Differentiable k-Means Clustering Layer for Neural Network Compression",
+  "summary": "This paper proposes DKM, a differentiable k-means clustering layer designed for compressing deep neural networks. Instead of hard cluster assignment, DKM uses an attention mechanism to softly assign weights to centroids and refines them through training to minimize task loss. DKM enables better compression-accuracy trade-offs than traditional clustering or quantization approaches, particularly in low-bit regimes, and can handle multi-dimensional clustering for enhanced model capacity.",
+  "classification": "Likely helpful",
+  "relevance": "Although DKM is applied to neural network compression, its core method—differentiable, attention-based soft clustering—is highly relevant for clustering continuous SNP data like beta or Z-scores. The soft assignment could help detect weak or noisy signals, and temperature-based tuning could help isolate noise clusters. However, direct application would need significant adaptation to biological causal inference contexts.",
+  "key_points": [
+    "Introduces a differentiable k-means clustering layer (DKM) based on attention mechanisms",
+    "Supports soft clustering during training with eventual hard assignment at inference",
+    "Handles multi-dimensional clustering robustly",
+    "Achieves superior compression results compared to DeepCompression, HAQ, and other methods",
+    "Enables direct optimization of cluster assignments with respect to a downstream loss without interfering with the original model loss",
+    "No additional parameters or loss terms needed",
+    "Could inform strategies for gradual and uncertainty-aware SNP clustering"
+  ],
+  "notes": [
+    "No explicit modeling of noise clusters, but the soft assignment could indirectly support noise detection",
+    "Multi-dimensional clustering insights could inspire clustering SNPs across multiple traits or conditions"
+  ]
+}

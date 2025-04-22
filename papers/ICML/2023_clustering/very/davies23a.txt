@@ -1,0 +1,16 @@
+{
+  "title": "Fast Combinatorial Algorithms for Min Max Correlation Clustering",
+  "summary": "This paper develops fast combinatorial algorithms for Min-Max correlation clustering on complete graphs. By introducing a novel 'correlation metric' that measures the agreement between nodes' neighborhoods, they construct approximate clusterings that minimize the maximum number of disagreements across vertices. They achieve significant speedups (up to 10,000 nodes) compared to prior LP/SDP-based methods, while maintaining good clustering quality. Their techniques allow for scaling to large datasets and have practical applications in social network and biological data clustering.",
+  "classification": "Very helpful",
+  "relevance": "The techniques in this paper are highly relevant for SNP clustering using association statistics. Their correlation metric could be adapted to define similarity between SNPs based on Z-scores or betas, and their min-max objective aligns with isolating noisy or spurious SNP groups. Furthermore, the fast combinatorial algorithms could be adapted to efficiently cluster large numbers of SNPs in a way that naturally detects and separates noise clusters.",
+  "key_points": [
+    "Introduces the 'correlation metric' based on local edge agreement in signed graphs.",
+    "Focuses on Min-Max objective: minimizing the maximum disagreement across vertices.",
+    "Provides exact and approximate (sampling-based) fast clustering algorithms.",
+    "Scales to large graphs (tested on Facebook networks with up to 10,000 nodes).",
+    "Clusters produced often recover 'ground truth' communities.",
+    "Outperforms LP-based methods in speed without large losses in clustering quality.",
+    "Potentially adaptable to SNP clustering based on beta/Z-score concordance."
+  ],
+  "additional_notes": "Future adaptations could define positive edges as high positive SNP correlation and negative edges as discordant associations. The correlation metric and min-max optimization would support robust identification of meaningful SNP groups while naturally isolating noisy elements."
+}

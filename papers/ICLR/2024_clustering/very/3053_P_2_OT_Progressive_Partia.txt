@@ -1,0 +1,15 @@
+{
+  "title": "Progressive Partial Optimal Transport for Deep Imbalanced Clustering",
+  "summary": "This paper presents a novel framework, Progressive Partial Optimal Transport (P2OT), for deep clustering on imbalanced datasets. The framework generates pseudo-labels progressively and incorporates an unbalanced optimal transport approach with matrix scaling algorithms for efficiency. A KL divergence constraint prevents degenerate solutions, and a progressive learning strategy allows for gradual incorporation of harder-to-cluster samples. P2OT achieves superior results on imbalanced datasets like CIFAR100, ImageNet-R, and iNaturalist2018 subsets, especially in medium and tail classes. Computational efficiency is improved, with P2OT being twice as fast as the Generalized Scaling Algorithm (GSA).",
+  "classification": "Very helpful",
+  "relevance": "The P2OT framework is highly relevant for clustering SNP data because it addresses imbalanced clustering with mechanisms for progressive learning and noise isolation. The introduction of a virtual cluster to absorb noise and the use of optimal transport frameworks can be adapted to handle SNPs with varying association strengths. Additionally, the progressive learning strategy is well-suited for gradually refining clusters based on statistical measures like beta or Z-scores.",
+  "key_points": [
+    "P2OT framework addresses deep clustering on imbalanced datasets using pseudo-labeling.",
+    "Formulates pseudo-label generation as a partial optimal transport problem.",
+    "Incorporates a virtual cluster to absorb low-confidence samples, enhancing robustness.",
+    "Uses a KL divergence constraint to avoid degenerate solutions.",
+    "Gradual learning process governed by a progressively increasing parameter ρ.",
+    "Achieves state-of-the-art results on various imbalanced datasets.",
+    "Computational efficiency improved by matrix scaling techniques."
+  ]
+}

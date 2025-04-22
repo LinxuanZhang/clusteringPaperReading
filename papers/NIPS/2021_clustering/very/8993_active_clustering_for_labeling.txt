@@ -1,0 +1,15 @@
+{
+  "title": "Active Clustering for Labeling Training Data",
+  "summary": "This paper develops active clustering algorithms that use only pairwise similarity queries to reconstruct a partition of a dataset, minimizing human labeling effort. It introduces optimal querying strategies (chordal algorithms) under a uniform partition model and proposes efficient clique-based strategies under fixed-class settings. The authors also handle noisy query answers with robust correction methods and provide theoretical complexity guarantees. The work offers practical guidelines for when pairwise clustering is more efficient than direct labeling.",
+  "classification": "Very helpful",
+  "relevance": "The methods for efficient clustering using noisy pairwise information align well with SNP clustering challenges, where effect-size-based similarities are available but noisy. The paper's strategies for robust cluster reconstruction and handling of errors can directly inform SNP clustering algorithm design for Mendelian randomization, particularly in isolating strong SNP clusters from noise using sparse querying techniques.",
+  "key_points": [
+    "Active clustering framework using pairwise same-class queries",
+    "Optimal chordal algorithms minimize query complexity in uniform model",
+    "Efficient clique-based strategies for fixed-number-of-classes settings",
+    "Handles noisy similarity queries with robust error correction",
+    "Query complexity scales nearly linearly with dataset size under reasonable assumptions",
+    "Practical analysis for deciding between direct labeling vs pairwise querying",
+    "Highly relevant for clustering SNPs based on noisy association signals"
+  ]
+}

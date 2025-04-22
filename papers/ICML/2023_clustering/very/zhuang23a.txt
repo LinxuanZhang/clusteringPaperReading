@@ -1,0 +1,16 @@
+{
+  "title": "Likelihood Adjusted Semidefinite Programs for Clustering Heterogeneous Data",
+  "summary": "The paper introduces iterative Likelihood Adjusted SDP (iLA-SDP), a clustering method designed for heterogeneous data where clusters may have different shapes or covariances. Building on semidefinite programming (SDP) ideas, iLA-SDP treats cluster labels as parameters, profiles out centroids, and iteratively updates both cluster labels and covariances to maximize observed data likelihood. The method achieves better stability and lower mis-clustering error than traditional methods like K-means and EM, especially under challenging conditions. It provides theoretical guarantees for exact recovery and performs strongly on real-world datasets.",
+  "classification": "Very helpful",
+  "relevance": "iLA-SDP directly addresses the challenges of clustering SNPs with varying association patterns (beta/Z-scores) by handling heterogeneity and improving robustness to noise and poor initialization. Its avoidance of centroid dependency and iterative likelihood maximization fits well with the structure of SNP clustering for pathway discovery and causal inference frameworks like Mendelian randomisation.",
+  "key_points": [
+    "Introduces likelihood-adjusted SDP (LA-SDP) to handle heterogeneous clusters",
+    "Profiles out centroids to avoid sensitivity to their configuration",
+    "Alternates between SDP-based assignment estimation and covariance matrix updating",
+    "Theoretically guarantees exact recovery under separability conditions",
+    "Empirically outperforms K-means, EM, and traditional SDP on real-world datasets",
+    "Robust to poor initializations and varying cluster shapes",
+    "Suggests extensions for high-dimensional or large-scale data using Burer-Monteiro factorization"
+  ],
+  "additional_notes": "Especially relevant for SNP clustering where clusters represent pathways with heterogeneous effect patterns. Also useful for settings with correlated SNPs or spurious signals, given its robustness to noise."
+}

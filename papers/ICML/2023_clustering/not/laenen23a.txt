@@ -1,0 +1,15 @@
+{
+  "title": "Nearly-Optimal Hierarchical Clustering for Well-Clustered Graphs",
+  "summary": "This paper presents two nearly-linear time hierarchical clustering algorithms that produce trees with a cost within a constant factor (O(1)) of the optimal under Dasgupta’s cost, specifically for graphs with well-defined cluster structures. The methods combine spectral clustering with degree-based bucketing and efficient tree merging strategies. The first algorithm uses recursive sparsest cuts on contracted graphs, while the second constructs caterpillar-like trees under balanced degree conditions. Experimental results on synthetic and real-world datasets demonstrate that the proposed methods achieve better clustering quality at a fraction of the computational cost compared to prior work.",
+  "classification": "Likely helpful",
+  "relevance": "While the paper focuses on clustering graphs rather than scalar SNP association measures, its ideas around efficient clustering for well-separated groups, spectral methods, and scalable bucket-based processing can be adapted for SNP clustering tasks. Particularly, the focus on clear clusters and efficiency under high dimensionality resonates with the needs of clustering SNPs by effect size or association statistics for causal inference frameworks. However, it does not directly address noise cluster identification, so adaptations would be required.",
+  "key_points": [
+    "Proposes SpecWRSC: a nearly-linear time spectral clustering + bucketing method.",
+    "Achieves O(1)-approximate hierarchical clustering cost under Dasgupta’s metric.",
+    "Introduces degree-based bucketing to simplify hierarchical tree construction.",
+    "Avoids reliance on high inner-cluster conductance (a limitation of prior work).",
+    "Extensive experiments on synthetic (SBM, HSBM) and real-world datasets.",
+    "Algorithm is scalable: handles graphs with tens of thousands of nodes.",
+    "Potentially useful for large-scale clustering of SNPs with well-separated signals."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Randomized Dimensionality Reduction for Facility Location and Single-Linkage Clustering",
+  "summary": "This paper explores how randomized dimensionality reduction can help speed up clustering for high-dimensional datasets without significant loss in quality. Focusing on facility location and single-linkage clustering, the authors show that projecting data into a number of dimensions proportional to its intrinsic (doubling) dimension can preserve clustering costs up to constant or (1+ε) factors. They provide strong theoretical proofs, lower bounds, and empirical results demonstrating that this method significantly accelerates clustering tasks while maintaining solution quality.",
+  "classification": "Likely helpful",
+  "relevance": "The paper offers valuable ideas for scaling clustering algorithms on high-dimensional SNP data by leveraging randomized dimensionality reduction while preserving essential structure. Although it focuses on different clustering objectives (facility location and MST) and does not address noise cluster detection or SNP-specific modeling (like LD or causal pathways), its theoretical results about low-distortion projections are highly applicable to SNP association data clustering, especially when trying to cluster thousands of SNPs for Mendelian randomisation.",
+  "key_points": [
+    "Proposes using random projections to reduce data dimensionality based on the intrinsic doubling dimension.",
+    "Proves that clustering quality (facility location cost, MST structure) is preserved after dimensionality reduction.",
+    "Demonstrates significant runtime improvements (up to 80x) with small loss in solution quality.",
+    "Establishes new theoretical guarantees and lower bounds for facility location and MST after projection.",
+    "Experimental validation on MNIST and Faces datasets supports practical benefits.",
+    "Highlights that in low doubling dimension settings, high-dimensional clustering can be significantly accelerated."
+  ]
+}

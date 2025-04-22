@@ -1,0 +1,13 @@
+{
+  "title": "Sparse Quantized Spectral Clustering",
+  "summary": "This paper explores how entry-wise nonlinear operations like sparsification, quantization, and binarization affect the performance of spectral clustering. Using random matrix theory, the authors show that while aggressive sparsification or quantization drastically reduces computation and storage costs, it minimally impacts clustering quality. They characterize phase transitions for clustering success, propose optimal transformation strategies, and highlight the potential for spurious (non-informative) eigenvectors resulting from non-linear transformations.",
+  "classification": "Very helpful",
+  "relevance": "The paper provides direct methodological insights into clustering in the presence of noise and offers practical tools for handling large, sparse data matrices. It is highly relevant for designing specialized clustering algorithms for SNP association data, particularly for isolating meaningful signals from noise clusters in Mendelian randomisation frameworks.",
+  "key_points": [
+    "Introduces selective sparsification and quantization methods for spectral clustering.",
+    "Uses random matrix theory to predict phase transitions in clustering performance.",
+    "Highlights existence of spurious eigenvectors caused by nonlinear transformations.",
+    "Provides optimal thresholds for sparsification and quantization to maximize performance while reducing complexity.",
+    "Validates findings through experiments on real-world datasets and theoretical analysis."
+  ]
+}

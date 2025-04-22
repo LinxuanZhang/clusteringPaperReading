@@ -1,0 +1,15 @@
+{
+  "title": "Biharmonic Distance of Graphs and its Higher-Order Variants: Theoretical Properties with Applications to Centrality and Clustering",
+  "summary": "The paper introduces the biharmonic distance, a new graph distance metric that captures global graph structure better than effective resistance, and proposes k-harmonic distances as generalizations. They develop new clustering algorithms based on these distances, including biharmonic k-means and biharmonic Girvan-Newman clustering. These methods are shown to outperform traditional spectral clustering approaches in detecting meaningful structure and sparse cuts, both theoretically and empirically, across a range of datasets.",
+  "classification": "Very helpful",
+  "relevance": "The ideas in this paper are highly applicable to clustering SNPs using association measures like betas or Z-scores. The biharmonic distance naturally highlights important structure and can distinguish strong from spurious associations, fitting the goal of isolating noise clusters for use in Mendelian randomization. The clustering algorithms proposed (biharmonic k-means, biharmonic Girvan-Newman) can be adapted to SNP graphs, and the k-harmonic framework offers further tuning flexibility. Robustness to noise and scalability are additional advantages.",
+  "key_points": [
+    "Introduces biharmonic distance as a graph metric sensitive to global structure",
+    "Proposes biharmonic k-means and biharmonic Girvan-Newman clustering algorithms",
+    "Develops k-harmonic distance for tunable clustering sensitivity",
+    "Strong theoretical foundation: Foster-like theorems, sparsity and cuts",
+    "Outperforms effective resistance and spectral clustering on multiple datasets",
+    "Methods are scalable, noise-robust, and offer low-rank approximation options",
+    "Direct relevance to modeling SNP associations as graphs and clustering meaningful groups"
+  ]
+}

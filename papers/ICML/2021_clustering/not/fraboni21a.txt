@@ -1,0 +1,14 @@
+{
+  "title": "Clustered Sampling: Low-Variance and Improved Representativity for Clients Selection in Federated Learning",
+  "summary": "The paper proposes clustered sampling as a way to reduce variance and improve representativity in client selection for federated learning (FL). It introduces two strategies: clustering based on clients' sample sizes and clustering based on model similarity. Theoretical results prove that clustered sampling leads to lower variance and unbiased model updates, with convergence guarantees equivalent to standard FL sampling. Experiments on MNIST and CIFAR-10 datasets show that clustered sampling improves training stability and final accuracy, especially under non-iid data conditions.",
+  "classification": "Likely helpful",
+  "relevance": "The paper introduces robust methods for sampling and aggregation that reduce variance and improve the representativity of selected data points, which could be adapted to stabilize SNP clustering based on beta or Z-score similarities. While it focuses on dynamic client sampling rather than static clustering, its variance control techniques and similarity-based grouping could inspire strategies to separate meaningful SNP groups from noisy ones.",
+  "key_points": [
+    "Introduces clustered sampling to improve client selection in federated learning.",
+    "Provides theoretical proofs of lower sampling variance and unbiased aggregation.",
+    "Develops two algorithms: one based on sample size clustering, one on model similarity clustering.",
+    "Demonstrates superior performance in non-iid settings on MNIST and CIFAR-10 datasets.",
+    "Maintains compatibility with existing privacy-preserving and communication-efficient FL methods.",
+    "Highlights the first theoretical investigation of variance properties in client sampling."
+  ]
+}

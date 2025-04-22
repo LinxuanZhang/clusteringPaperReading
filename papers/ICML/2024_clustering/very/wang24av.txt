@@ -1,0 +1,15 @@
+{
+  "title": "MC-GTA: Metric-Constrained Model-Based Clustering using Goodness-of-fit Tests with Autocorrelations",
+  "summary": "This paper proposes MC-GTA, a model-based clustering method that accounts for metric autocorrelation in data (e.g., spatial, temporal). It uses Wasserstein-2 distances between local Gaussian Markov Random Field models, fitting a generalized multivariate semivariogram to model autocorrelation. Clustering is formulated as minimizing a hinge loss based on goodness-of-fit tests. MC-GTA achieves better clustering quality, speed, and robustness compared to prior methods such as TICC and STICC.",
+  "classification": "Very helpful",
+  "relevance": "MC-GTA provides an innovative approach to clustering structured data by distinguishing meaningful clusters from noise via statistical goodness-of-fit tests. It offers methodological insights highly applicable to SNP clustering for Mendelian randomisation, especially for isolating noise clusters and capturing SNP correlation structures. Although developed for spatio-temporal data, its flexibility makes it directly adaptable to genomic contexts.",
+  "key_points": [
+    "Model-based clustering using Wasserstein-2 distance between GMRF models.",
+    "Generalized semivariogram for multivariate metric autocorrelation.",
+    "Clustering loss based on hinge loss from goodness-of-fit tests, avoiding unstable EM.",
+    "Demonstrated superior performance on real and synthetic datasets.",
+    "Efficient and robust optimization process suitable for large datasets.",
+    "Public implementation available (https://github.com/Octopolugal/MC-GTA.git)."
+  ],
+  "additional_notes": "Future adaptation to genomic settings would involve redefining metric spaces to reflect SNP properties (e.g., LD-based distances) instead of spatial/temporal metrics."
+}

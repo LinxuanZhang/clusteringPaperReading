@@ -1,0 +1,14 @@
+{
+  "title": "Robust Online Correlation Clustering",
+  "summary": "This paper addresses the problem of correlation clustering in an online setting, where data points arrive sequentially and only noisy pairwise similarity/dissimilarity labels are available. The authors develop algorithms that maintain a trusted set of points and dynamically filter noise to achieve near-optimal clustering costs despite adversarial corruption. They provide strong theoretical guarantees and validate their methods through experiments.",
+  "classification": "Likely helpful",
+  "relevance": "The robust noise-handling techniques developed in this paper—particularly coreset-based trusted point selection and dynamic filtering—could inform strategies for isolating meaningful SNP clusters while filtering out noise from spurious signals. However, adaptation would be necessary because the SNP clustering task involves continuous effect-size data rather than binary similarity labels, and batch rather than online data arrival.",
+  "key_points": [
+    "Robust online clustering under adversarial noise",
+    "Dynamic coreset maintenance to trust certain points more",
+    "Noise filtering techniques for similarity links",
+    "Theoretical guarantees for clustering accuracy under noise",
+    "Useful inspiration for isolating signal vs noise in SNP clustering",
+    "Focus on pairwise similarity rather than continuous feature data"
+  ]
+}

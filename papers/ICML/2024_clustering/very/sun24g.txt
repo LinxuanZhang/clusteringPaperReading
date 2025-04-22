@@ -1,0 +1,16 @@
+{
+  "title": "LSEnet: Lorentz Structural Entropy Neural Network for Deep Graph Clustering",
+  "summary": "The paper introduces LSEnet, a deep learning framework for graph clustering that does not require the number of clusters to be predefined. It formulates a differentiable structural information (DSI) objective to capture the graph's intrinsic structure and constructs a partitioning tree to cluster nodes. LSEnet leverages hyperbolic space (Lorentz model) to embed nodes and uses manifold-based graph convolutions to integrate node features. Experiments show that LSEnet outperforms many baselines on benchmark datasets in terms of clustering accuracy, scalability, and robustness without prior knowledge of cluster number.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to SNP clustering for Mendelian randomisation because it directly addresses clustering without knowing the number of clusters, handles graph-structured data, and proposes methods that naturally isolate weaker (potentially noise) connections. The DSI framework and hyperbolic embedding techniques can inform the design of specialized algorithms to identify meaningful SNP clusters and separate noise in a causal inference context.",
+  "key_points": [
+    "Differentiable Structural Information (DSI) minimizes graph uncertainty to reveal clusters without predefining K.",
+    "LSEnet models graphs in hyperbolic (Lorentz) space, which captures hierarchical or tree-like structures better.",
+    "Integrates node features with structure via manifold-based convolutional layers.",
+    "Outperforms strong deep graph clustering baselines even without prior knowledge of cluster number.",
+    "Efficient in terms of computation and scalable to large graphs.",
+    "Theory-backed connection between structural entropy minimization and cluster conductance.",
+    "Visualization shows clear separation of clusters in hyperbolic space.",
+    "Potentially transferable methodology to cluster SNPs based on association measures (betas/Z-scores) and detect noise clusters."
+  ]
+}

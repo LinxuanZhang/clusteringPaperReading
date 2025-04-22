@@ -1,0 +1,16 @@
+{
+  "title": "End-to-end Differentiable Clustering with Associative Memories",
+  "summary": "The paper proposes ClAM, a clustering algorithm based on Associative Memories (AMs), which enables end-to-end differentiable clustering while maintaining discrete cluster assignments. ClAM uses an energy minimization framework where data points evolve toward cluster prototypes through gradient descent, preserving hard cluster assignments. It also introduces a novel self-supervised loss based on masked pattern completion to improve clustering quality. Empirical evaluation across various datasets shows significant improvements (up to 60%) over k-means and other clustering baselines.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant because it proposes a way to cluster data points while maintaining discrete assignments and robustness to noise — exactly what is needed for clustering SNPs based on beta/Z-scores for use in Mendelian randomisation. The pattern completion ability could be adapted to identify true signal SNP clusters versus noise clusters. Furthermore, the end-to-end differentiable nature of ClAM makes it flexible for future extensions, such as adapting to genomic-specific data structures or error models.",
+  "key_points": [
+    "Clustering framework based on Associative Memories (AMs) with end-to-end differentiability",
+    "Maintains discrete hard assignments while using SGD optimization",
+    "Introduces a self-supervised loss based on masked input and pattern completion",
+    "Demonstrated improvements of up to 60% over k-means in Silhouette Coefficient",
+    "Extensible to weighted and spherical clustering settings",
+    "Potentially applicable to SNP data by adjusting the energy function and distance measures",
+    "Prototypes evolve dynamically and can model interpretable cluster centroids",
+    "Open-source code available at https://github.com/bsaha205/clam"
+  ]
+}

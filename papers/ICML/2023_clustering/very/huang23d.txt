@@ -1,0 +1,15 @@
+{
+  "title": "High-dimensional Clustering onto Hamiltonian Cycle",
+  "summary": "This paper proposes HCHC, a framework for clustering and visualizing high-dimensional data by combining local and global structural learning and mapping clusters onto a Hamiltonian cycle. First, the GLDC deep clustering method learns probability distributions over clusters that preserve both local similarity and global separation. Then, using cluster similarities based on Pearson correlations, cluster anchors are arranged optimally on a circle using an approximate Hamiltonian cycle. Samples are positioned according to their cluster probabilities, allowing clear identification of clusters, inter-cluster similarities, and outliers. HCHC shows superior clustering accuracy and visualization quality on multiple real-world datasets.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to clustering SNP data using beta/Z-scores. It addresses clustering high-dimensional, noisy data by combining local and global structure, learning soft probability assignments rather than hard clusters, and explicitly identifying outliers. These strategies align closely with your goal of identifying meaningful SNP groups for Mendelian randomization while isolating noise clusters. Although their Hamiltonian cycle visualization may be less critical for SNP data, the clustering methodology is directly adaptable and valuable.",
+  "key_points": [
+    "Introduces GLDC (Global-Local Deep Clustering) balancing local compactness and global separation.",
+    "Learns soft cluster assignment probabilities, suitable for noisy data like SNPs.",
+    "Detects and isolates outliers based on low cluster assignment probabilities.",
+    "Uses Pearson correlation between clusters to define inter-cluster similarities.",
+    "Maps clusters onto a circle via Hamiltonian cycle optimization for visualization.",
+    "Outperforms traditional clustering and visualization methods (e.g., k-means, t-SNE, UMAP) on multiple datasets.",
+    "Framework and methods are adaptable to association score (beta/Z-score) data for causal inference pipelines."
+  ]
+}

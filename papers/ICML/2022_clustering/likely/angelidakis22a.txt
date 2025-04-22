@@ -1,0 +1,15 @@
+{
+  "title": "Fair and Fast k-Center Clustering for Data Summarization",
+  "summary": "This paper introduces a new clustering algorithm that simultaneously addresses two fairness goals: ensuring fair demographic representation across clusters and preventing distorted cluster sizes where some clusters represent many more data points than others. They define the Private Representative k-Center (PRIV-REP-KC) problem, propose a backbone-and-realization framework, and develop a fast algorithm with a 15-approximation guarantee and near-linear runtime. Extensive experiments on real-world datasets show their method leads to fairer, more balanced, and efficient clustering outcomes.",
+  "classification": "Very helpful",
+  "relevance": "The backbone construction, robust cluster assignment with minimum size constraints, and simultaneous optimization for fairness are highly applicable to clustering SNPs based on beta or Z-score association measures while detecting and isolating noise clusters. Although the original context focuses on demographics rather than biological signals, the underlying algorithmic strategies offer direct inspiration for robust, interpretable SNP clustering methods for use in Mendelian randomization.",
+  "key_points": [
+    "Defines Private Representative k-Center (PRIV-REP-KC) combining demographic fairness and minimum cluster size constraints.",
+    "Proposes a fast backbone-based clustering framework scalable to large datasets (O(nk² + k⁵) runtime).",
+    "Introduces flow-based optimization for enforcing private clustering efficiently.",
+    "Achieves a 15-approximation factor with strong empirical results.",
+    "Highlights benefits of handling multiple fairness aspects simultaneously rather than sequentially.",
+    "Shows improved balance and fairness in clustering across multiple datasets (Adult, Diabetes, Electric, Query datasets).",
+    "Ideas of backbone stability and minimum cluster size constraints are adaptable to SNP clustering with noise isolation goals."
+  ]
+}

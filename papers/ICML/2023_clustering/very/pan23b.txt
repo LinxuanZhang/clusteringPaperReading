@@ -1,0 +1,15 @@
+{
+  "title": "Beyond Homophily: Reconstructing Structure for Graph-agnostic Clustering",
+  "summary": "This paper presents DGCN, a graph-agnostic clustering framework that addresses the challenge of clustering nodes without prior knowledge of graph homophily. It reconstructs two auxiliary graphs (homophilic and heterophilic) from the original data, applies a mixed low- and high-frequency filter, and decouples the learned embeddings into separate attribute and structure spaces. DGCN achieves state-of-the-art clustering performance across both homophilic and heterophilic graphs.",
+  "classification": "Very helpful",
+  "relevance": "The methods proposed in this paper are highly relevant for SNP clustering. The idea of reconstructing homophilic and heterophilic graphs maps well onto constructing similarity and dissimilarity matrices from beta/Z-score associations. Mixed filtering techniques and dual embedding spaces offer novel ways to capture robust SNP clusters while isolating noise, critical for building meaningful instruments for Mendelian randomization.",
+  "key_points": [
+    "Proposes graph reconstruction to build separate homophilic and heterophilic graphs from raw data.",
+    "Introduces a mixed graph filter that captures both low- and high-frequency information.",
+    "Uses dual subspace embeddings to separate attribute and structure information.",
+    "Outperforms state-of-the-art clustering methods across 11 benchmark datasets, especially in heterophilic settings.",
+    "Demonstrates robustness in real-world, unsupervised graph clustering scenarios.",
+    "Concepts generalize to any data where relationships (homophilic or heterophilic) are unknown — highly applicable to SNP clustering with noisy beta/Z-scores.",
+    "Code available for reference: github.com/Panern/DGCN."
+  ]
+}

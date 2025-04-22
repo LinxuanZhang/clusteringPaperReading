@@ -1,0 +1,14 @@
+{
+  "title": "Image Clustering with External Guidance",
+  "summary": "This paper introduces a new paradigm called externally guided clustering, where external knowledge (textual semantics from WordNet) is used to guide the clustering process instead of relying solely on internal data patterns. The authors propose TAC (Text-Aided Clustering), which retrieves discriminative nouns for images, combines image and text features, and applies cross-modal mutual distillation to enhance clustering quality. TAC achieves state-of-the-art clustering performance on several benchmarks without needing class labels or heavy retraining.",
+  "classification": "Likely helpful",
+  "relevance": "Although designed for image-text data, the principle of using external knowledge to guide clustering is conceptually valuable for SNP clustering. SNPs could be enriched with biological annotations (e.g., gene mappings, pathway memberships) similar to how images are enriched with textual semantics. Techniques like cross-modal distillation could inspire robust strategies for handling noisy or incomplete SNP clusters. However, significant adaptations are needed to apply the method to genomic data.",
+  "key_points": [
+    "Introduces externally guided clustering paradigm using external knowledge sources.",
+    "Proposes TAC (Text-Aided Clustering) combining image and text modalities.",
+    "Retrieves discriminative nouns for each image cluster from WordNet.",
+    "Applies cross-modal mutual distillation to enhance clustering quality.",
+    "Achieves state-of-the-art results on multiple clustering benchmarks including ImageNet-1K.",
+    "Suggests general potential of leveraging external annotations in clustering problems."
+  ]
+}

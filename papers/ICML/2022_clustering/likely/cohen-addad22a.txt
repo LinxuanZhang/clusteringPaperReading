@@ -1,0 +1,15 @@
+{
+  "title": "Online and Consistent Correlation Clustering",
+  "summary": "This paper proposes the AGREE-ON algorithm for online correlation clustering, where points (nodes) arrive sequentially and clustering must be updated dynamically. The method clusters a signed graph, aiming to minimize both the clustering cost and the number of changes (recourse) to previous assignments. AGREE-ON reuses a static clustering subroutine (Agreement) and applies lazy reassignment strategies, achieving provable logarithmic recourse per node and constant-factor approximation to optimal clustering. Experimental results on real-world datasets demonstrate superior stability and clustering quality compared to prior methods.",
+  "classification": "Very helpful",
+  "relevance": "The clustering framework is highly relevant to designing SNP clustering algorithms that must deal with noisy beta/Z-score data. The concepts of similarity/dissimilarity graphs, ε-agreement, and dynamic, noise-tolerant refinement can be directly adapted to SNP association measures. The theoretical focus on balancing clustering quality and assignment stability parallels the goal of isolating noise clusters and building reliable instrument sets for Mendelian randomisation.",
+  "key_points": [
+    "Introduces AGREE-ON: a dynamic, stable online clustering algorithm for signed graphs.",
+    "Applies lazy cluster reassignments to minimize recourse while maintaining solution quality.",
+    "Uses ε-agreement to define similarity robustly, even with noisy or evolving data.",
+    "Proves logarithmic recourse per node and constant factor approximation bounds.",
+    "Demonstrates empirical superiority over baseline methods like Pivot.",
+    "Framework is adaptable to clustering SNPs based on noisy association measures.",
+    "Highlights trade-offs between cluster quality and stability, highly relevant for causal inference applications."
+  ]
+}

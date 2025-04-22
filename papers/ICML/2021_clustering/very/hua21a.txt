@@ -1,0 +1,15 @@
+{
+  "title": "A Scalable Deterministic Global Optimization Algorithm for Clustering Problems",
+  "summary": "The paper proposes a scalable, deterministic global optimization method for minimum sum-of-squares clustering (MSSC). By formulating MSSC as a two-stage mixed-integer second-order cone programming (MISOCP) problem, the authors develop a reduced-space branch-and-bound (BB) algorithm that branches only on cluster centers, uses efficient closed-form bounds, and supports massive parallelism. Their method scales to datasets with up to 200,000 samples and guarantees convergence to a global ε-optimal solution. The approach significantly outperforms traditional branch-and-bound and heuristic methods like k-means, providing both strong performance and theoretical guarantees.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to designing specialized clustering algorithms for SNP data. Its global optimization framework, focus on scalability, and bounding techniques provide direct inspiration for creating SNP clusterers that can avoid spurious local optima and systematically detect noise clusters. Although some adaptation would be needed to use SNP association measures instead of Euclidean distances, the overall approach is extremely transferable and informative for your project on Mendelian randomisation.",
+  "key_points": [
+    "Clustering formulated as a Mixed Integer Second Order Cone Programming (MISOCP) problem.",
+    "Reduced-space branch-and-bound algorithm that only branches on cluster centers, independent of data sample size.",
+    "Efficient lower and upper bounding methods using closed-form solutions, scenario-based sample grouping, and Lagrangian decomposition.",
+    "Proves global convergence to ε-optimal solutions with formal convergence guarantees.",
+    "Massively scalable: up to 200,000 samples solvable with parallelism.",
+    "Strong practical performance on both synthetic and real-world datasets, compared against k-means and CPLEX.",
+    "Open-source implementation available in Julia for reproducibility and future extension."
+  ]
+}

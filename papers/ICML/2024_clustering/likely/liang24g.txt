@@ -1,0 +1,14 @@
+{
+  "title": "Scalable Multiple Kernel Clustering: Learning Clustering Structure from Expectation",
+  "summary": "This paper introduces a theoretically grounded, scalable multiple kernel clustering (MKC) method called SMKC. Assuming that data follow an isotropic Gaussian distribution, the authors show that the expectation of a kernel matrix is approximately low-rank. They propose to approximate each base kernel by a rank-k matrix, fuse these into a consensus matrix, and optimize this structure efficiently using an anchor-based strategy, thus enabling clustering on very large datasets. Extensive experiments validate both the theoretical bounds and practical effectiveness of the method.",
+  "classification": "Likely helpful",
+  "relevance": "The paper offers theoretical insights on low-rank clustering structures under noise and proposes scalable techniques suitable for large datasets — both highly relevant to SNP clustering. The methodology could inspire SNP clustering frameworks by modeling association matrices as noisy low-rank structures and applying scalable kernel-based fusion. However, adaptations are needed since the method assumes Gaussian-distributed data and focuses on multi-view scenarios, while SNP data might differ in distributional and structural properties.",
+  "key_points": [
+    "Theoretically analyzes kernel matrix expectation under Gaussian data assumptions.",
+    "Proposes Scalable Multiple Kernel Clustering (SMKC) using rank-k approximations.",
+    "Anchor-based methods for handling large-scale datasets efficiently.",
+    "No need for hyper-parameter tuning, making it practical for real-world data.",
+    "Provides non-asymptotic theoretical guarantees for approximation errors.",
+    "Outperforms several state-of-the-art MKC methods in experiments on large datasets."
+  ]
+}

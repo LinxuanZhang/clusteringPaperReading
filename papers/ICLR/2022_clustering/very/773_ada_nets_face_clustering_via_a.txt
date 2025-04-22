@@ -1,0 +1,21 @@
+{
+  "title": "ADA-NETS: Face Clustering via Adaptive Neighbour Discovery in the Structure Space",
+  "summary": "This paper presents ADA-NETS, a novel face clustering method that builds cleaner graphs by transforming features into a structure space and dynamically learning the number of neighbor connections for each data point. The method addresses the common problem of noise edges in graph construction, using a heuristic quality-driven adaptive filter based on an Fβ-score and a robust similarity metric combining cosine and Jaccard similarities. ADA-NETS achieves state-of-the-art clustering results on several datasets, showing strong generalization and robustness against noisy input data.",
+  "classification": "Very helpful",
+  "relevance": "The problems addressed (noise handling, graph construction, clustering continuous noisy data) directly mirror the challenges in SNP clustering for causal inference. The adaptive neighbor discovery and structure space methods could be adapted to SNP beta/Z-score data, helping detect true biological pathways while isolating spurious noise clusters.",
+  "key_points": [
+    "Introduces adaptive neighbor discovery for graph construction",
+    "Uses structure space transformation combining cosine and Jaccard similarities",
+    "Focuses heavily on detecting and removing noise edges",
+    "State-of-the-art clustering results on MS-Celeb-1M and other datasets",
+    "Learned heuristic (Fβ-score) to balance precision and recall in neighborhood discovery",
+    "GCN-based feature refinement with noise-resilient graph input",
+    "Robust against changes in neighborhood size parameter k",
+    "Methods could be transferred to SNP-level clustering with continuous effect sizes"
+  ],
+  "notes": [
+    "Direct adaptation would require redefining the similarity metrics for SNP association data",
+    "Dynamic noise handling is critical for detecting unreliable SNP instruments",
+    "Useful for designing clustering algorithms that must be robust to high-dimensional, noisy input typical of GWAS summary statistics"
+  ]
+}

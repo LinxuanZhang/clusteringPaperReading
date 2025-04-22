@@ -1,0 +1,18 @@
+{
+  "title": "Explaining Kernel Clustering via Decision Trees",
+  "summary": "This paper extends recent progress in explainable k-means clustering to the kernel setting by proposing Kernel IMM. It constructs an axis-aligned decision tree that approximates kernel k-means partitions while remaining interpretable. Central to the approach is a surrogate feature map, ensuring threshold splits in the original input space. The authors provide theoretical guarantees on the \"price of explainability,\" showing near-optimal kernel cluster quality can be preserved. They also present greedy refinements (Kernel ExKMC, Kernel Expand) to improve clustering accuracy, with the trade-off of deeper trees. Empirical results demonstrate the method’s effectiveness on synthetic and real datasets, often rivaling non-interpretable kernel k-means performance.",
+  "classification": "Likely helpful",
+  "relevance": "Crucial for researchers/practitioners requiring interpretable but flexible clustering. By bridging kernel clustering with decision trees, it addresses real-world data that are not linearly separable, while maintaining worst-case approximation guarantees on interpretability.",
+  "key_points": [
+    "Generalizes iterative mistake minimization (IMM) to kernel k-means",
+    "Introduces surrogate features to preserve axis-aligned interpretability",
+    "Offers O(k^2) or dimension-sensitive bounds for the kernel \"price of explainability\"",
+    "Greedy expansions (Kernel ExKMC/Expand) further refine the partition at the cost of deeper trees",
+    "Empirically validated on various datasets (e.g. half-moon patterns, Iris), demonstrating near-optimal kernel cluster accuracy"
+  ],
+  "extra_insights": [
+    "Highlights fundamental issues: direct Gaussian kernel feature maps are not interpretably threshold-friendly",
+    "Proposes data-dependent expansions or Taylor expansions for dimension decoupling",
+    "Suggests future directions in bounding/characterizing price of explainability for more general kernels"
+  ]
+}

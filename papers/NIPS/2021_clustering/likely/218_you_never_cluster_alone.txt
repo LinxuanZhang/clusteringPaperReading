@@ -1,0 +1,14 @@
+{
+  "title": "You Never Cluster Alone",
+  "summary": "This paper proposes Twin-Contrast Clustering (TCC), a new method for unsupervised clustering that combines instance-level and cluster-level contrastive learning. Instead of only learning how individual data points differ, TCC builds representations for entire clusters by aggregating instances with soft assignments. This method outperforms previous clustering techniques on multiple visual datasets and shows that explicitly modeling cluster context significantly improves clustering quality. TCC uses novel techniques like Gumbel-softmax reparameterization and a memory queue to maintain cluster-level consistency.",
+  "classification": "Likely helpful",
+  "relevance": "TCC introduces several techniques that could be adapted for clustering SNP-level data based on association measures. Soft assignments, deep set aggregation, and cluster-level contrastive objectives could help identify meaningful SNP groups while down-weighting noisy or irrelevant signals. However, since the method is designed for images rather than genomic data, adaptations would be needed. It does not address causal inference or Mendelian randomization directly but provides clustering mechanisms that could be very useful for building instrument variables.",
+  "key_points": [
+    "Twin-Contrast Clustering (TCC) combining instance-level and cluster-level contrastive learning.",
+    "Soft probabilistic cluster assignments via Gumbel-softmax reparameterization.",
+    "Cluster context aggregation using deep sets.",
+    "Use of memory queues for maintaining cluster representation consistency across batches.",
+    "Extensive experiments showing strong performance over benchmarks like CIFAR-10 and ImageNet-10.",
+    "Soft assignments help in dealing with noise and partial cluster memberships."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Fast Topological Clustering with Wasserstein Distance",
+  "summary": "This paper presents a novel and efficient method for clustering complex networks based on topological similarity. Using persistent homology to capture connected components and cycles, it computes Wasserstein distances between persistence barcodes and clusters networks based on a joint topological and geometric metric. The method achieves high accuracy and scalability on both simulated modular networks and real-world brain connectivity data, demonstrating superior ability to detect subtle structural variations in noisy data.",
+  "classification": "Very helpful",
+  "relevance": "The paper provides methods directly applicable to clustering noisy, continuous SNP data by leveraging topological features (birth-death lifetimes of signals) rather than raw distances alone. The persistent homology framework and Wasserstein distance allow robust clustering, while adaptive weighting between topology and direct effect sizes enables flexible handling of SNP heterogeneity. The efficient algorithms are scalable to large datasets, fitting the needs of GWAS-level SNP analysis.",
+  "key_points": [
+    "Uses persistent homology to extract 0D and 1D topological features (connected components, cycles) from graphs",
+    "Introduces a closed-form, fast computation of Wasserstein distance for 1D persistence barcodes",
+    "Defines a topological centroid (average birth and death points) for cluster center updates",
+    "Combines geometric and topological distances into a flexible clustering criterion using λ weighting",
+    "Validated on simulated modular networks and real brain connectivity data under anesthesia",
+    "Robust against noise and missing direct correspondence between individual edge weights",
+    "Clustering framework generalizes to noisy, continuous-valued, large datasets like SNP association statistics"
+  ],
+  "notes": [
+    "Could model SNP Z-score thresholds similarly to filtration in persistent homology",
+    "Persistence lifetimes could represent SNP signal strength and robustness",
+    "Topological centroids may capture 'average' pathway-like signals across clusters",
+    "λ weighting provides flexibility between strong SNP effects and subtle shared structure"
+  ]
+}

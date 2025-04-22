@@ -1,0 +1,14 @@
+{
+  "title": "Optimal Clustering with Noisy Queries via Multi-Armed Bandit",
+  "summary": "This paper addresses the problem of clustering when the available pairwise information is noisy, proposing a new polynomial-time algorithm that uses multi-armed bandit techniques to efficiently recover clusters. The authors introduce a best-arm identification framework for assigning cluster labels with minimal noisy queries, achieving nearly optimal query complexity and proving tight lower bounds. The approach is particularly effective for large-scale clustering under uncertainty and noise.",
+  "classification": "Likely helpful",
+  "relevance": "The paper introduces novel strategies for clustering under noise using adaptive sampling methods, which could inspire the design of SNP clustering algorithms capable of prioritizing reliable signals and identifying noise clusters. Although the original setup assumes interactive queries to an oracle, the concepts could be adapted to SNP beta/Z-score data by designing similarity-based pseudo-queries or confidence-weighted cluster assignments.",
+  "key_points": [
+    "Proposes a multi-armed bandit based clustering algorithm under noisy oracle conditions.",
+    "Achieves optimal query complexity up to polynomial factors: O(n(k+log n)/δ²).",
+    "Proves a new lower bound of Ω(n log n/δ²) on query complexity.",
+    "Introduces efficient recursive clustering strategies removing constant fractions of uncertain points per round.",
+    "Establishes strong connections between clustering with noisy queries and stochastic block models (SBM).",
+    "Could inspire confidence-driven SNP clustering strategies in the presence of noisy association signals."
+  ]
+}

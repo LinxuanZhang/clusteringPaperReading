@@ -1,0 +1,15 @@
+{
+  "title": "Multi-Facet Clustering Variational Autoencoders",
+  "summary": "This paper introduces MFCVAE, a probabilistic deep learning model capable of simultaneously learning multiple independent clusterings ('facets') from high-dimensional data in an unsupervised way. Each facet is modeled with a Mixture-of-Gaussians prior, and a ladder-like neural network architecture progressively disentangles these facets. They extend theoretical results for optimal posterior estimation (VaDE trick) to multi-facet settings and demonstrate that their method can capture multiple latent structures with stability, compositionality, and diversity across different datasets like MNIST, 3DShapes, and SVHN.",
+  "classification": "Very helpful",
+  "relevance": "The MFCVAE framework fits very well with the SNP clustering task for Mendelian randomisation, where multiple latent structures (different causal pathways, pleiotropic effects, confounders) may coexist. Its unsupervised, multi-facet, noise-tolerant nature makes it highly suitable. Adaptations would be needed to handle genomic data specifics like beta/Z-score structures, but the methodological foundation is an excellent match.",
+  "key_points": [
+    "Proposes Multi-Facet Clustering VAEs with separate Mixture-of-Gaussians priors for different facets",
+    "Fully unsupervised, probabilistic model trained end-to-end",
+    "Introduces a progressive training schedule and ladder architecture to disentangle facets",
+    "Extends the VaDE trick for optimal ELBO optimization without sampling bias",
+    "Achieves strong empirical results in multi-facet clustering, compositionality, and diversity",
+    "Highly relevant for clustering SNPs by multiple biological characteristics while handling noise",
+    "Robust theoretical foundations and practical empirical validation"
+  ]
+}

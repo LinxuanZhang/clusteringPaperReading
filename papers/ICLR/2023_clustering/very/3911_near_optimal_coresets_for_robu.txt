@@ -1,0 +1,15 @@
+{
+  "title": "Near-Optimal Coresets for Robust Clustering",
+  "summary": "This paper presents a near-optimal method for constructing ε-coresets for robust clustering problems (k-median and k-means) with a known number of outliers. Their method isolates outliers and partitions inliers into geometric structures called rings and groups, applying careful sampling to preserve clustering objectives within ε-relative error. Their coresets significantly outperform prior baselines in accuracy and efficiency, achieving consistent low error and substantial speedups in real-world datasets. They also prove that their dependence on the number of outliers is nearly theoretically optimal.",
+  "classification": "Very helpful",
+  "relevance": "The paper's focus on robust clustering with outlier handling, its efficient coreset construction method, and its theoretical guarantees align very closely with the goals of clustering SNPs based on beta/Z-scores while detecting and isolating noise clusters. Adapting their framework could allow scalable and noise-tolerant SNP clustering to build strong instruments for Mendelian randomization.",
+  "key_points": [
+    "Introduces near-optimal ε-coreset construction for robust k-median and k-means clustering with m outliers.",
+    "Coreset size is O(m + poly(k, ε⁻¹)) with near-linear construction time.",
+    "Utilizes a geometric decomposition into rings and groups to sample efficiently.",
+    "Empirical experiments show consistent performance gains over uniform and sensitivity sampling.",
+    "Enables approximately 100× speedup for approximate clustering algorithms while maintaining clustering quality.",
+    "Demonstrates scalability and robustness even with large numbers of outliers.",
+    "Highlights practical and theoretical advances that are adaptable to high-dimensional biological datasets like SNP beta/Z-score matrices."
+  ]
+}

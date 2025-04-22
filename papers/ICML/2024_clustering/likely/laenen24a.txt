@@ -1,0 +1,15 @@
+{
+  "title": "Dynamic Spectral Clustering with Provable Approximation Guarantee",
+  "summary": "This paper proposes a dynamic spectral clustering algorithm that efficiently clusters graphs as they evolve over time with new vertices and edges. It introduces a dynamic cluster-preserving sparsifier and a contracted supernode graph to approximate the cluster structure with provable guarantees. The method achieves O(1) amortized update time and sublinear query time, making it extremely fast while maintaining clustering quality. Experiments on synthetic and real-world datasets confirm that the approach produces near-optimal clusters much faster than re-running standard spectral clustering methods from scratch.",
+  "classification": "Very helpful",
+  "relevance": "The paper provides a robust, efficient framework for clustering dynamically evolving data while maintaining provable approximation guarantees. This is highly relevant to SNP clustering in Mendelian randomisation, where clusters must be updated as more SNPs or traits are included and noise must be handled carefully. Techniques like dynamic sparsification, spectral clustering, and eigen-gap monitoring can be adapted to SNP association matrices, supporting the detection of meaningful SNP clusters and isolation of noise clusters.",
+  "key_points": [
+    "Introduces dynamic spectral clustering with strong theoretical guarantees.",
+    "Maintains cluster-preserving sparsifiers updated in O(1) amortized time.",
+    "Uses contracted graphs of supernodes to track cluster structures efficiently.",
+    "Detects changes in cluster number via eigen-gap analysis.",
+    "Scales to graphs with hundreds of thousands of nodes and millions of edges.",
+    "Applicable for clustering noisy, evolving data — matches SNP clustering needs.",
+    "Can inspire SNP graph construction and dynamic cluster updating frameworks."
+  ]
+}

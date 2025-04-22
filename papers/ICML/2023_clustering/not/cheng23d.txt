@@ -1,0 +1,15 @@
+{
+  "title": "Parallel Online Clustering of Bandits via Hedonic Game",
+  "summary": "This paper introduces CLUB-HG, an algorithm that clusters users in contextual bandit settings by modeling clustering as a hedonic game. Each user/player independently chooses to stay or leave clusters based on their similarity to others, leading to a self-organized Nash equilibrium. The method supports parallel online learning, adapts to dynamic settings, and offers strong theoretical guarantees such as sublinear regret. Experiments show it outperforms state-of-the-art bandit clustering methods, being faster and more accurate in recovering true clusters even in noisy environments.",
+  "classification": "Likely helpful",
+  "relevance": "While this work focuses on online clustering for dynamic user data rather than static SNP-level association data, it offers valuable ideas for SNP clustering. Particularly, the use of hedonic game-theoretic clustering and Nash equilibrium convergence could inform designs that detect and separate noisy or spurious clusters. Adaptation would be needed to shift from sequential bandit rewards to static SNP association measures like betas or Z-scores.",
+  "key_points": [
+    "Novel use of hedonic games for self-organizing clustering",
+    "Parallel online updating, which may inspire SNP clustering pipelines with dynamic re-analysis",
+    "Noise robustness through cost-based user incentives",
+    "Theoretical guarantees on convergence and regret",
+    "No need for predefining cluster numbers",
+    "Empirical validation on large real-world datasets (Netflix, MovieLens)"
+  ],
+  "additional_notes": "The hedonic game framework could be adapted for SNP clustering by treating SNPs as players and defining similarity using association statistics (e.g., correlation of betas or Z-scores). Further exploration would be needed to handle non-dynamic, high-dimensional SNP matrices typical of GWAS data."
+}

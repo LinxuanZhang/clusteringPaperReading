@@ -1,0 +1,17 @@
+{
+  "title": "A Differentially Private Clustering Algorithm for Well-Clustered Graphs",
+  "summary": "This paper develops a graph clustering method that satisfies (ε, δ)-differential privacy in the edge domain. It focuses on well-clustered graphs, where each cluster has high internal connectivity and low external connectivity. The solution is found via an SDP encoding the cluster structure, whose stability and low sensitivity permit adding minimal Gaussian noise. The final partitioning step uses spectral embedding plus k-means, leading to near-optimal misclassification rates compared to non-private baselines. Empirical tests on synthetic block-model data confirm the algorithm’s efficacy.",
+  "classification": "Likely helpful",
+  "relevance": "Beneficial for researchers needing strong privacy for graph partitioning (e.g., in sensitive network data). The approach merges semi-definite programming, spectral methods, and DP theory to achieve near state-of-the-art clustering accuracy with rigorous privacy guarantees.",
+  "key_points": [
+    "Addresses cluster recovery in well-clustered graphs under (ε, δ)-differential privacy",
+    "Employs a specialized SDP with strong-convexity to bound sensitivity for adding minimal Gaussian noise",
+    "Achieves near-optimal misclassification ratio compared to non-private cluster recovery",
+    "Proves pure (ε)-DP is unattainable with small error, justifying (ε, δ)-DP relaxation",
+    "Experimental results on stochastic block model show better performance than naive randomization approaches"
+  ],
+  "extra_insights": [
+    "Highlights a spectral approach under differential privacy, bridging classical spectral clustering with modern DP tools",
+    "Argument generalizes beyond 2-block SBMs to k clusters with small volume differences"
+  ]
+}

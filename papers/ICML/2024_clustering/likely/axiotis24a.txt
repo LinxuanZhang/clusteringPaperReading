@@ -1,0 +1,15 @@
+{
+  "title": "Data-Efficient Learning via Clustering-Based Sensitivity Sampling: Foundation Models and Beyond",
+  "summary": "The paper introduces a new data selection method combining k-means clustering with sensitivity sampling to create small, representative subsets of large datasets. Data points are clustered based on embeddings, and sampled with probability depending on both their distance to cluster centers and local model loss, assuming the loss function is Hölder continuous. The method is computationally efficient, robust to outliers, and offers strong theoretical guarantees. It is validated across tasks such as fine-tuning large language models and linear regression.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to designing clustering algorithms for SNP data. Its method of clustering based on embeddings, followed by sensitivity-based sampling, directly translates to clustering SNPs by association strength and isolating meaningful signals while detecting noise. The theoretical guarantees for subset representativeness and the emphasis on outlier robustness are crucial for developing reliable SNP clusters for Mendelian randomization studies.",
+  "key_points": [
+    "Proposes clustering-based data selection using k-means and sensitivity sampling",
+    "Works under Hölder continuity assumptions, relaxing Lipschitz constraints",
+    "Efficiently approximates loss distributions with few model evaluations",
+    "Outperforms uniform and classic coreset-based methods empirically",
+    "Applies to neural networks, linear regression, and fine-tuning LLMs",
+    "Sampling probability balances distance from cluster centers and model loss",
+    "Robust against outliers, making it suitable for noisy data scenarios"
+  ]
+}

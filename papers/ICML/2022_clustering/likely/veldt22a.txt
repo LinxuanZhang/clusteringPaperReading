@@ -1,0 +1,14 @@
+{
+  "title": "Correlation Clustering via Strong Triadic Closure Labeling: Fast Approximation Algorithms and Practical Lower Bounds",
+  "summary": "This paper proposes new fast and scalable approximation algorithms for correlation clustering, particularly for the cluster editing and cluster deletion variants. By drawing connections to strong triadic closure labeling problems, the authors develop a Match-Flip-Pivot (MFP) framework that avoids expensive linear programming relaxations. Their methods provide practical lower bounds, fast approximate solutions, and robust a posteriori approximation guarantees, all while scaling to graphs with millions of nodes.",
+  "classification": "Very helpful",
+  "relevance": "The concepts and techniques from this paper are highly relevant to clustering SNPs based on association measures. Its focus on handling noise in pairwise similarity/dissimilarity data, scalable algorithms, and theoretical guarantees would support robust clustering of SNPs for Mendelian randomisation. The match-flip-pivot approach could be adapted to build SNP clusters where association signals are consistent, while isolating noise clusters through weak or inconsistent connections.",
+  "key_points": [
+    "Introduces the Match-Flip-Pivot (MFP) algorithm for fast approximate correlation clustering.",
+    "Develops strong triadic closure labeling connections to clustering with robustness guarantees.",
+    "First purely combinatorial approximation algorithms for cluster deletion with 4-approximation guarantees.",
+    "Enables scalable clustering on datasets with millions of nodes.",
+    "Practical methods for generating a posteriori quality guarantees for clustering results.",
+    "Highlights practical applications including biological network clustering, which could inspire SNP applications."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Bregman Power k-Means for Clustering Exponential Family Data",
+  "summary": "This paper introduces Bregman Power k-Means, a scalable and robust clustering method that extends classical k-means to data generated from exponential family distributions by leveraging Bregman divergences and power mean annealing. The method achieves closed-form updates via majorization-minimization, avoids poor local minima, and delivers strong theoretical guarantees, including convergence and generalization bounds. Experiments on synthetic and real-world data demonstrate superior performance over standard k-means and existing Bregman clustering approaches.",
+  "classification": "Very helpful",
+  "relevance": "The paper is highly relevant to SNP clustering tasks because it offers a flexible, robust, and scalable clustering method capable of handling noisy and non-Gaussian data distributions. Bregman Power k-Means can naturally model SNP-level association data through appropriate divergence choices and can help identify meaningful SNP clusters while isolating noise. Its theoretical strength and empirical robustness make it ideal for building clustering algorithms that support causal inference through Mendelian randomisation.",
+  "key_points": [
+    "Introduces Bregman Power k-Means, combining Bregman divergences with power mean annealing.",
+    "Provides closed-form updates using majorization-minimization (MM), making it efficient and scalable.",
+    "Theoretical guarantees for generalization error and convergence without bounded support assumptions.",
+    "Demonstrated superior performance across Gaussian, Poisson, Gamma, and Binomial data.",
+    "Outperforms standard k-means and Bregman hard clustering in robustness and accuracy.",
+    "Applicable to clustering problems where data do not naturally form spherical clusters, such as SNP association data."
+  ]
+}

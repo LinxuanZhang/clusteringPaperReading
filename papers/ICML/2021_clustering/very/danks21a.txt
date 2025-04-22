@@ -1,0 +1,14 @@
+{
+  "title": "BasisDeVAE: Interpretable Simultaneous Dimensionality Reduction and Feature-Level Clustering with Derivative-Based Variational Autoencoders",
+  "summary": "The paper introduces BasisDeVAE, a variational autoencoder framework that models feature behaviors in derivative space to perform simultaneous dimensionality reduction and feature-level clustering. By modeling derivatives rather than raw outputs, the method enables easy enforcement of monotonic or transient feature behavior, leading to better interpretability and robustness. Applied to synthetic, brain imaging, and single-cell data, BasisDeVAE outperforms previous methods in reconstructing trajectories and clustering features into biologically meaningful groups.",
+  "classification": "Very helpful",
+  "relevance": "BasisDeVAE is highly aligned with SNP clustering goals in Mendelian randomisation. It directly clusters features (SNPs) based on their behavior across latent traits and provides a robust mechanism to detect and isolate noise clusters. Its derivative-based modeling allows embedding domain knowledge (e.g., expected monotonic relationships) and its scalability ensures applicability to genome-wide datasets.",
+  "key_points": [
+    "Introduces DeVAE and BasisDeVAE, VAEs with derivative-based decoders.",
+    "Performs simultaneous dimensionality reduction and feature-level clustering.",
+    "Allows enforcement of monotonicity and transient behaviors in a flexible way.",
+    "Demonstrates superior performance in clustering noisy and real-world biological data.",
+    "Supports interpretable modeling, critical for pathway analysis in causal inference.",
+    "Scalable to datasets with thousands of features (e.g., SNPs or genes)."
+  ]
+}

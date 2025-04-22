@@ -1,0 +1,16 @@
+{
+  "title": "Multi-view Contrastive Graph Clustering (MCGC)",
+  "summary": "MCGC proposes a new method for clustering multi-view graph data by learning a consensus graph through graph filtering, graph reconstruction, and graph-level contrastive learning. It filters node features to remove high-frequency noise, learns an optimized consensus graph from multiple views, and applies contrastive regularization to ensure clustering-friendliness. MCGC achieves state-of-the-art performance on multiple benchmark datasets, outperforming deep learning methods despite being a shallow model. Ablation studies confirm the key role of contrastive loss and graph smoothing.",
+  "classification": "Very helpful",
+  "relevance": "MCGC's multi-view graph learning and graph-level contrastive regularization are highly relevant for clustering SNPs based on beta or Z-scores. The framework’s focus on noise suppression, multi-source integration, and robust clustering structure matches the needs for isolating true biological signals from noise in Mendelian randomization contexts. Although the paper deals with explicit graphs, its techniques can be adapted to SNP similarity graphs based on effect size patterns. Thus, it offers substantial insight for designing a specialized SNP clustering method.",
+  "key_points": [
+    "Proposes Multi-view Contrastive Graph Clustering (MCGC) for clustering noisy, multi-view graph data.",
+    "Uses graph filtering to smooth node features and remove high-frequency noise.",
+    "Learns a consensus graph by combining multiple views with an adaptive weighting mechanism.",
+    "Applies contrastive learning at the graph-level to reinforce clustering structure.",
+    "Outperforms both shallow and deep learning methods on ACM, DBLP, IMDB, Amazon datasets.",
+    "Graph consensus learning and noise reduction strategies directly applicable to SNP clustering with association measures.",
+    "Simple optimization strategy alternating between consensus graph updates and view weight updates.",
+    "Public codebase available for reproducibility."
+  ]
+}

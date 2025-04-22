@@ -1,0 +1,14 @@
+{
+  "title": "Learning of Cluster-based Feature Importance for Electronic Health Record Time-series",
+  "summary": "This paper presents CAMELOT, a supervised deep learning model that clusters EHR time-series data while addressing challenges like class imbalance and cluster collapse. It introduces a feature-time attention mechanism to enhance interpretability and two novel loss functions to balance cluster use and promote diversity. The model outperforms benchmarks like Time-Series K-Means, SOM-VAE, and AC-TPC in clustering separability and outcome prediction tasks, and provides clear, interpretable mappings of which features and timepoints drive cluster assignment.",
+  "classification": "Likely helpful",
+  "relevance": "Although the paper deals with EHR time-series data rather than SNP-level beta/Z-scores, it introduces methods for noise-resilient, interpretable clustering that could inspire the design of SNP clustering algorithms. Specifically, techniques for preventing cluster collapse, using attention mechanisms to identify key features, and handling highly imbalanced classes align well with the challenges of clustering SNPs into meaningful instruments while isolating noise.",
+  "key_points": [
+    "Proposes CAMELOT: a supervised deep learning model for clustering EHR time-series data.",
+    "Introduces feature-time attention mechanisms for cluster interpretability.",
+    "Develops loss functions to prevent cluster collapse and address class imbalance.",
+    "Benchmarked against TSKM, SOM-VAE, and AC-TPC, achieving better cluster separability and prediction accuracy.",
+    "Potentially adaptable to static SNP data by modifying the feature attention framework and adjusting loss functions for continuous association scores instead of categorical outcomes.",
+    "GitHub repository available: https://github.com/hrna-ox/camelot-icml"
+  ]
+}

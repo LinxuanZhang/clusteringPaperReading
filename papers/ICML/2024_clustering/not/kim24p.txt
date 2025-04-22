@@ -1,0 +1,15 @@
+{
+  "title": "Clustered Federated Learning via Gradient-based Partitioning",
+  "summary": "The paper proposes CFL-GP, a novel algorithm for Clustered Federated Learning (CFL) that clusters clients based on the similarity of their gradient updates. By accumulating and clustering gradient vectors using spectral clustering, CFL-GP achieves fast, robust, and theoretically guaranteed convergence to optimal clusters and models, even under noise and high-dimensional conditions. The method outperforms prior CFL approaches across synthetic, image, and industrial datasets, offering strong robustness, efficiency, and scalability for federated learning in heterogeneous environments.",
+  "classification": "Likely helpful",
+  "relevance": "The concepts of clustering based on noisy feature vectors, using spectral methods for dimensionality reduction, and robust convergence under heterogeneity are highly relevant to SNP clustering in Mendelian randomisation. While the paper focuses on federated clients and model gradients, similar strategies could be adapted to SNP effect sizes across traits. However, substantial adaptations would be necessary to redefine the clustering features (from gradients to SNP associations) and tailor the learning dynamics to a static, SNP-centered analysis rather than dynamic federated training.",
+  "key_points": [
+    "Proposes CFL-GP: Clustered Federated Learning via Gradient-based Partitioning",
+    "Uses moving averages of gradients as clustering features",
+    "Applies spectral clustering with dimensionality reduction for scalability",
+    "Provides theoretical guarantees for convergence in clustering and model optimization",
+    "Achieves rapid convergence and robustness to noise and heterogeneity",
+    "Empirically validated on synthetic regression, rotated MNIST, CIFAR10, and industrial tasks",
+    "Potentially adaptable to SNP clustering by redefining gradient features as SNP association profiles"
+  ]
+}

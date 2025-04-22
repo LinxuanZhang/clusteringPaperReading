@@ -1,0 +1,15 @@
+{
+  "title": "Global Optimization of K-Center Clustering",
+  "summary": "This paper presents a global optimization approach to the k-center clustering problem, introducing a reduced-space branch-and-bound algorithm that guarantees convergence to a global optimum. It applies feasibility-based bounds tightening techniques to efficiently prune the search space, making the method scalable to datasets with millions of samples. Extensive empirical results demonstrate that the method significantly outperforms heuristic clustering approaches and commercial solvers like CPLEX, achieving very small optimality gaps within reasonable computational times.",
+  "classification": "Likely helpful",
+  "relevance": "While originally intended for geometric clustering, the paper provides robust techniques for clustering large datasets while controlling noise, which could be adapted for SNP clustering based on association measures. Especially valuable are the reduced-space branching, feasibility-based pruning strategies, and exact convergence guarantees, although adaptations would be needed to handle association-driven distance metrics rather than Euclidean distances.",
+  "key_points": [
+    "Introduces a reduced-space branch-and-bound algorithm for global k-center clustering.",
+    "Designs feasibility-based bounds tightening (FBBT) techniques to prune search regions and accelerate convergence.",
+    "Proves finite-step convergence to exact global optima.",
+    "Demonstrates scalability to datasets with over 14 million samples.",
+    "Open-source Julia implementation available.",
+    "Highlights the weaknesses of heuristic clustering (e.g., farthest-first) compared to globally optimal solutions.",
+    "Methods could inform SNP clustering if adapted to biologically relevant distance metrics."
+  ]
+}

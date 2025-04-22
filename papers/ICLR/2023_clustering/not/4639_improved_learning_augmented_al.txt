@@ -1,0 +1,14 @@
+{
+  "title": "Improved Learning-Augmented Algorithms for k-Means and k-Medians Clustering",
+  "summary": "This paper presents improved deterministic algorithms for k-means and k-medians clustering in the presence of noisy auxiliary labels. The authors propose trimming predicted clusters and constructing robust centers (means or medians) to achieve near-optimal clustering cost even when up to 50% of the points are mislabeled. They significantly improve the previous approximation guarantees and run in near-linear time. Experiments on CIFAR-10, MNIST, and PHY datasets show competitive or superior performance compared to prior methods. The work offers insights into robust clustering using imperfect predictor information, emphasizing deterministic, scalable, and noise-tolerant designs.",
+  "classification": "Very helpful",
+  "relevance": "The paper's focus on robust, noise-tolerant clustering using partial predictor information is highly applicable to SNP clustering based on association statistics like beta or Z-scores. SNP datasets often involve noisy or uncertain signals, and the robust trimming and centroid-selection techniques proposed here offer a promising framework to cluster SNPs while detecting and isolating spurious signals. The theoretical guarantees on approximation under high noise levels further make it attractive for genomic applications where error rates can be substantial.",
+  "key_points": [
+    "Proposes deterministic learning-augmented algorithms for k-means and k-medians clustering.",
+    "Handles label error rates up to 50%, significantly improving prior work (which only handled <14%).",
+    "Uses robust subset selection and center construction to minimize the impact of noisy points.",
+    "Proves tight theoretical bounds on clustering quality and computational efficiency.",
+    "Experiments validate strong empirical performance across various real-world datasets.",
+    "Insights on how auxiliary information can be corrected during clustering, relevant for SNP clustering with noisy beta/Z-scores."
+  ]
+}

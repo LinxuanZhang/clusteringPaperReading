@@ -1,0 +1,15 @@
+{
+  "title": "Pruned Pivot: Correlation Clustering Algorithm for Dynamic, Parallel, and Local Computation Models",
+  "summary": "The paper introduces Pruned Pivot, a new scalable algorithm for correlation clustering that improves upon the classic PIVOT method. It operates efficiently in dynamic, parallel (MPC), and local computation (LCA) settings. The method prunes query trees to limit exploration and maintains a clustering that is within a 3+ε approximation of the optimal. It allows for constant expected update time for graph changes, reduces computational complexity in massive graphs, and empirically matches the clustering quality of traditional approaches while being much faster.",
+  "classification": "Very helpful",
+  "relevance": "The methods described are highly applicable to SNP clustering for Mendelian randomization. Correlation clustering directly models the task of forming internally consistent SNP groups and separating noise. Pruned Pivot's design naturally isolates noisy or spurious nodes, scales to large graphs, and maintains high clustering quality with minimal computation. These features align well with the needs of clustering SNPs based on association statistics while handling noise robustly.",
+  "key_points": [
+    "Introduces Pruned Pivot, a fast, scalable variant of the PIVOT algorithm for correlation clustering",
+    "Maintains 3+ε approximation with constant expected update time in dynamic graphs",
+    "Suitable for massive graphs: runs efficiently in parallel (MPC) and local (LCA) computation models",
+    "Natural way to identify and isolate noise clusters (e.g., singleton 'unlucky' nodes)",
+    "Experimental results show performance within 1% of traditional methods with much lower computational cost",
+    "Concepts of agreement and pruning fit well with SNP grouping based on beta/Z-score similarities",
+    "Provides theoretical guarantees and empirical validation"
+  ]
+}

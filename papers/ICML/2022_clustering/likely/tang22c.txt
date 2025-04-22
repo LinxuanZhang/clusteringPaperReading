@@ -1,0 +1,14 @@
+{
+  "title": "Deep Safe Incomplete Multi-view Clustering: Theorem and Algorithm",
+  "summary": "The paper presents DSIMVC, a framework for clustering incomplete multi-view data without degrading performance compared to clustering on only complete data. It introduces a bi-level optimization where missing views are imputed from learned semantic neighbors, and incomplete samples are weighted to reduce the impact of poor imputations. The framework offers theoretical guarantees on performance and shows superior experimental results across multiple datasets, even at high missingness rates.",
+  "classification": "Likely helpful",
+  "relevance": "Although designed for multi-view clustering, the methods proposed—especially robust sample weighting, dynamic neighbor mining, and safe learning guarantees—could be adapted for clustering SNPs using association measures where data are noisy or partially missing. These techniques could help isolate noise clusters and improve the stability of SNP cluster discovery for use in Mendelian randomisation, though domain-specific adjustments would be needed.",
+  "key_points": [
+    "Proposes Deep Safe Incomplete Multi-View Clustering (DSIMVC) with theoretical safety guarantees.",
+    "Dynamic neighbor mining based on learned feature representations.",
+    "Automatic weighting of incomplete samples to minimize the risk of performance degradation.",
+    "Bi-level optimization framework combining safe learning and semantic imputation.",
+    "Empirically validated on multiple datasets like BDGP, MNIST-USPS, CCV, and Multi-Fashion.",
+    "Could inspire robust clustering and noise isolation strategies for SNP association studies."
+  ]
+}

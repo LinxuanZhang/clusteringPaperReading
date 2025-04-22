@@ -1,0 +1,15 @@
+{
+  "title": "Fuzzy Clustering with Similarity Queries",
+  "summary": "This paper proposes a robust, semi-supervised framework for fuzzy clustering that minimizes the number of human (oracle) queries needed. By leveraging similarity queries instead of full membership labels, the authors develop algorithms that can efficiently and accurately approximate optimal fuzzy clusterings. The methods are designed to handle overlapping clusters, noisy oracle responses, and achieve strong theoretical guarantees. Experimental results confirm the practical effectiveness of their approach.",
+  "classification": "Very helpful",
+  "relevance": "The paper offers a robust and flexible approach directly applicable to clustering SNPs based on beta/Z-scores for Mendelian randomisation. Its methods for handling overlapping membership, noise, and limited supervision map well onto real-world challenges in genetic data. Adaptations would be needed to incorporate SNP-specific issues like linkage disequilibrium, but the foundational ideas are extremely relevant and valuable.",
+  "key_points": [
+    "Introduces fuzzy clustering with limited similarity queries",
+    "Efficient two-phase and sequential algorithms with theoretical guarantees",
+    "Handles noisy oracle responses through robust averaging techniques",
+    "Supports overlapping cluster membership naturally",
+    "Relevant to contexts with noisy data and partial cluster assignment, like SNPs",
+    "Practical and scalable (sublinear in number of points)",
+    "Experimental validation on real-world datasets"
+  ]
+}

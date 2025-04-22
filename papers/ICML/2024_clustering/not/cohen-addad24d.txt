@@ -1,0 +1,15 @@
+{
+  "title": "Dynamic Correlation Clustering in Sublinear Update Time",
+  "summary": "The paper proposes a dynamic algorithm for correlation clustering where nodes are added adversarially and deleted randomly. The algorithm maintains a clustering with an O(1)-approximation to the optimal correlation clustering cost, achieving sublinear (polylogarithmic) update time per node. It uses a dynamic, sparse representation of the graph based on anchor nodes and probabilistic agreement checks, supported by an efficient notification system to propagate graph changes. Experiments show that the method outperforms prior approaches on real-world data, especially for dense graphs.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to the task of clustering SNPs based on beta or Z-scores to build instrument sets for Mendelian randomization. The core method of maintaining clusters based on neighborhood similarity under dynamic conditions is directly applicable to grouping SNPs while filtering out noise clusters. Its noise robustness, scalability, and focus on maintaining structural quality match key requirements for SNP clustering in causal inference contexts.",
+  "key_points": [
+    "Proposes the Dynamic Agreement Algorithm for correlation clustering",
+    "Uses sparse graph maintenance via anchor nodes and probabilistic agreement checking",
+    "Achieves O(1)-approximation to optimal clustering cost",
+    "Maintains sublinear polylog(n) update time per node addition/deletion",
+    "Highly scalable, robust against noisy graph perturbations",
+    "Experimentally validated on large real-world graph datasets",
+    "Framework easily adaptable to SNP clustering with appropriate graph construction"
+  ]
+}

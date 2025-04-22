@@ -1,0 +1,15 @@
+{
+  "title": "The Complexity of k-Means Clustering when Little is Known",
+  "summary": "The paper explores the complexity of performing k-means clustering when much of the data is missing or irrelevant, focusing on sparse, incomplete datasets. It introduces new algorithms that use graph-theoretical properties (treewidth, local feedback edge number) to achieve tractable clustering. Three main algorithms are developed: for bounded-domain (integer) data using incidence treewidth, for real-valued data using primal treewidth, and for real-valued data using local feedback edge number of the incidence graph. The approach heavily uses parameterized complexity and dynamic programming over tree decompositions.",
+  "classification": "Likely helpful",
+  "relevance": "While the paper does not directly address SNP clustering or causal inference, it provides important techniques for clustering in the presence of incomplete or noisy data, using graph-based structural properties. These ideas could inform the design of SNP clustering algorithms that can robustly detect noise and meaningful signal clusters based on effect size measures (e.g., beta/Z-scores).",
+  "key_points": [
+    "Study of k-means clustering on incomplete data matrices.",
+    "Introduction of incidence graph and primal graph representations for missing data.",
+    "Use of treewidth and local feedback edge number as key parameters.",
+    "Fixed-parameter tractable (FPT) algorithms for bounded-domain and real-valued data.",
+    "Dynamic programming over tree decompositions to merge partial clustering solutions.",
+    "Potential inspiration for handling sparse or noisy SNP effect matrices."
+  ],
+  "notes": "The techniques are general but will need adaptation to fit a framework based on clustering SNPs by their association strength rather than simple feature vectors."
+}

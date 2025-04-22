@@ -1,0 +1,15 @@
+{
+  "title": "Uniform Concentration Bounds toward a Unified Framework for Robust Clustering",
+  "summary": "This paper presents a robust, theoretically principled framework for center-based clustering using a Median-of-Means (MoM) estimation approach. It enhances robustness to outliers and noise without requiring restrictive assumptions on the data distribution or dimensions. The methods apply to a general class of distance measures (Bregman divergences) and achieve strong non-asymptotic guarantees on error rates, including O(n^-1/2) convergence. Empirical results show that the MoM-powered clustering methods outperform standard clustering methods, especially under high noise conditions.",
+  "classification": "Very helpful",
+  "relevance": "The paper provides direct insights and methods that could inform the design of clustering algorithms for SNP data where isolating true associations from noise is essential. Its robust Median-of-Means-based clustering framework offers resilience to outliers, theoretical guarantees, and flexibility to work beyond standard Euclidean settings — all crucial features for SNP clustering in Mendelian randomisation studies. Adaptations will be needed for SNPs as features, but the foundation is excellent.",
+  "key_points": [
+    "Introduces robust clustering based on Median-of-Means (MoM) estimation",
+    "Achieves O(n^-1/2) convergence under minimal assumptions",
+    "Applicable to various dissimilarity measures (Bregman divergences)",
+    "Provides strong non-asymptotic statistical guarantees",
+    "Empirical validation showing improved robustness over standard methods",
+    "Handles outliers without assumptions on their distribution",
+    "Directly useful for designing SNP clustering methods capable of isolating noise clusters"
+  ]
+}

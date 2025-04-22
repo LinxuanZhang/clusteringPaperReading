@@ -1,0 +1,15 @@
+{
+  "title": "Fair Sparse Regression with Clustering: An Invex Relaxation for a Combinatorial Problem",
+  "summary": "This paper introduces a novel framework combining sparse regression with clustering based on an unknown hidden attribute (e.g., bias). The authors propose an invex relaxation — the first of its kind for a combinatorial problem — making the optimization globally tractable. Their method jointly recovers the regression coefficients and the hidden group memberships with theoretical guarantees. Experiments on synthetic and real-world data validate their theoretical claims, showing accurate bias detection and support recovery with a sample complexity scaling logarithmically with the number of features.",
+  "classification": "Likely helpful",
+  "relevance": "Although primarily targeting regression problems with hidden bias in samples, the paper’s approach to simultaneously clustering and selecting relevant features under hidden structure constraints could be adapted to SNP clustering. Particularly useful are the invex optimization strategy, the focus on robustness and sparsity, and the efficient sample complexity. Some adaptation would be needed since SNPs would act as features rather than samples, but the conceptual overlap is strong.",
+  "key_points": [
+    "First invex relaxation for a combinatorial clustering and regression problem",
+    "Simultaneous recovery of sparse regression vector and hidden binary clustering",
+    "Logarithmic sample complexity with feature size",
+    "Fairness constraints incorporated without access to sensitive attributes",
+    "Strong theoretical guarantees and primal-dual construction proofs",
+    "Empirical validation on synthetic and real-world datasets",
+    "Framework could inspire SNP clustering models that handle hidden biological subgrouping"
+  ]
+}

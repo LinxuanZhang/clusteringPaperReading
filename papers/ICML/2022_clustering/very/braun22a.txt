@@ -1,0 +1,16 @@
+{
+  "title": "An iterative clustering algorithm for the Contextual Stochastic Block Model with optimality guarantees",
+  "summary": "The paper presents an iterative refinement clustering algorithm for the Contextual Stochastic Block Model (CSBM), where both network structure (edges) and side information (covariates) are used for community detection. The method alternates between estimating model parameters and updating cluster assignments based on a least-squares criterion, achieving fast convergence and statistical optimality. The authors extend theoretical guarantees to multi-community settings and demonstrate superior performance on synthetic and real datasets, including applications to signed graphs and mixed information settings.",
+  "classification": "Very helpful",
+  "relevance": "The iterative refinement strategy, natural integration of heterogeneous data sources, and robustness to weak or noisy signals make this paper highly relevant to clustering SNPs based on beta or Z-scores for causal inference. Although originally applied to network nodes, the core ideas can be adapted to SNP-level clustering by treating association statistics as covariates and optionally modeling LD or correlation structures as graph information. The least-squares framework fits naturally with continuous SNP effect sizes.",
+  "key_points": [
+    "Proposes an iterative refinement clustering algorithm (IR-LS) for CSBM models.",
+    "Incorporates graph structure and covariates naturally without arbitrary weighting.",
+    "Achieves exact recovery and optimal convergence under certain noise and separation conditions.",
+    "Demonstrates robustness to weak separation in graph or covariate data alone.",
+    "Extends theoretical guarantees beyond two-community settings.",
+    "Supports clustering signed graphs and heterogeneous information.",
+    "Provides a scalable and faster alternative to spectral or SDP-based methods.",
+    "The approach is adaptable to clustering SNPs based on association statistics and metadata."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Row-clustering of a Point Process-valued Matrix",
+  "summary": "This paper introduces a novel clustering framework (MM-MPP) for row-level clustering of matrices where entries are marked point processes. It models each event sequence using multi-level log-Gaussian Cox processes (LGCPs) and clusters rows using a semi-parametric Expectation-Solution (ES) algorithm, efficiently estimated via functional principal component analysis (FPCA). The method demonstrates significant improvements in clustering accuracy and computational efficiency over competing approaches, validated through synthetic and large real-world datasets such as Twitter activity, taxi rides, and credit card transactions.",
+  "classification": "Likely helpful",
+  "relevance": "Although the method is built for temporal event data, the multi-level latent modeling approach and efficient ES algorithm offer useful strategies for SNP clustering. Multi-level decomposition could be adapted to model SNP-level, trait-level, and residual noise variations. Some adaptation would be required to translate from temporal events to SNP feature data, and explicit noise cluster isolation would need to be layered on top.",
+  "key_points": [
+    "Proposes a mixture model of multi-level marked point processes (MM-MPP) for clustering",
+    "Each row modeled with multi-level log-Gaussian Cox processes (LGCPs)",
+    "Introduces an efficient Expectation-Solution (ES) algorithm using functional PCA",
+    "Demonstrates massive speed-ups and improved clustering stability compared to prior methods",
+    "Handles repeated observations and multiple event types (analogous to SNPs affecting multiple traits)",
+    "Multi-level decomposition: account-level, day-level, residual-level variability",
+    "Potentially adaptable for SNP effect clustering with thoughtful modifications"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Parallel and Efficient Hierarchical k-Median Clustering",
+  "summary": "This paper introduces the first distributed algorithm for hierarchical Euclidean k-median clustering with provable theoretical guarantees. It uses a quadtree-based 2-restricted Hierarchically Separated Tree embedding of the data and a greedy algorithm to build a clustering hierarchy efficiently in parallel under the Massive Parallel Computation (MPC) model. The method achieves an expected approximation factor within O(min{d, log n} log Δ) of optimal and works for all k values simultaneously. It shows strong empirical improvements in runtime and competitiveness in solution quality compared to prior distributed methods.",
+  "classification": "Likely helpful",
+  "relevance": "The paper provides scalable, theoretically principled clustering methods highly relevant for SNP clustering across millions of variants. Its hierarchical structure could help map SNPs to nested pathways. However, the lack of explicit noise handling and the assumption of Euclidean distances mean adaptations would be needed to make it fully suitable for clustering noisy SNP association signals for causal inference in Mendelian randomisation.",
+  "key_points": [
+    "First distributed algorithm for hierarchical Euclidean k-median clustering with guarantees",
+    "Uses randomized quadtree embedding into 2-RHST for tree-based approximation",
+    "Greedy, quasi-linear time algorithm for clustering on the tree structure",
+    "Handles all k-values simultaneously (nested clusters)",
+    "Near-linear total work and logarithmic parallel rounds",
+    "Empirical validation shows substantial speed gains over previous methods",
+    "Highly scalable to datasets with billions of points",
+    "Adaptations needed for SNP noise detection and non-Euclidean association structures"
+  ]
+}

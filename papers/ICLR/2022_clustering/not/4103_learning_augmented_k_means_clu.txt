@@ -1,0 +1,21 @@
+{
+  "title": "Learning-Augmented k-Means Clustering",
+  "summary": "This paper proposes learning-augmented k-means algorithms that use possibly noisy predictors to improve clustering quality and runtime. The authors design robust center estimation procedures and efficient assignment steps using dimensionality reduction and approximate nearest neighbor search. The algorithms are theoretically proven to achieve (1+O(α))-approximate clustering cost relative to optimal when the predictor's error rate is bounded by α. Experiments on multiple real datasets demonstrate significant improvements over traditional clustering methods, even with imperfect predictors.",
+  "classification": "Very helpful",
+  "relevance": "The method offers a framework for clustering data with noisy predictor labels, highly relevant for clustering SNPs based on noisy beta or Z-score association measures. Techniques for robust center estimation, handling adversarial errors, and scaling to large datasets are directly applicable. This paper provides both theoretical tools and practical algorithms that can be adapted for clustering SNPs while distinguishing signal from noise clusters, critical for Mendelian randomization studies.",
+  "key_points": [
+    "Learning-augmented clustering framework with noisy predictors",
+    "Robust center estimation using coordinate-wise filtering",
+    "Optimized algorithm with near-linear runtime using dimension reduction and approximate nearest neighbor search",
+    "Theoretical (1+O(α)) approximation guarantees based on predictor error rate",
+    "Handles adversarial as well as random noise in predictor labels",
+    "Significant empirical improvements on internet graph, KDD, and CIFAR datasets",
+    "Insight that predictors must be processed carefully, not blindly trusted"
+  ],
+  "notes": [
+    "Strongly applicable to SNP clustering with prior noisy information",
+    "Filtering strategies to isolate meaningful SNP signal clusters are crucial",
+    "Scalability important for genome-wide datasets with millions of SNPs",
+    "Potential to integrate with predictors derived from other GWAS studies or biological priors"
+  ]
+}

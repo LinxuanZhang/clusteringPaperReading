@@ -1,0 +1,15 @@
+{
+  "title": "Better Algorithms for Individually Fair k-Clustering",
+  "summary": "This paper introduces LP-based algorithms for individually fair k-clustering, optimizing standard clustering objectives (like k-means and k-median) while ensuring that each point has a nearby center within a fairness radius. The Fair-Round algorithm uses LP rounding and a filtering technique to balance cost and fairness, achieving bi-criteria approximation guarantees (8,8 for k-median, 8,4 for k-means). A sparsification technique is also proposed to drastically improve runtime on large datasets. Empirical results show fairness violations are minimal and clustering costs stay close to the LP lower bound.",
+  "classification": "Very helpful",
+  "relevance": "The paper's LP-based clustering approach with fairness constraints maps very well to the problem of clustering SNPs by effect sizes, where fairness could be reinterpreted as balancing signal strength and noise across clusters. Techniques like sparsification could help scale to very large SNP datasets, and the theoretical and practical results support the goal of building a robust, noise-tolerant SNP clustering pipeline.",
+  "key_points": [
+    "Formulates fair k-clustering as a linear program and rounds solutions efficiently",
+    "Develops Fair-Round algorithm achieving strong fairness and cost guarantees",
+    "Sparsification method greatly improves LP solving speed for large datasets",
+    "Empirical results show minimal fairness violations and near-optimal clustering cost",
+    "Fine-grained fairness analysis with histograms of individual fairness violations",
+    "Framework is adaptable to SNP clustering where local fairness (signal strength consistency) is critical",
+    "Scalable to very large datasets via LP sparsification and filtering techniques"
+  ]
+}

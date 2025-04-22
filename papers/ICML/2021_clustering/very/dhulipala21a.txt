@@ -1,0 +1,14 @@
+{
+  "title": "Hierarchical Agglomerative Graph Clustering in Nearly-Linear Time",
+  "summary": "This paper introduces new algorithms for hierarchical agglomerative clustering (HAC) that work in nearly-linear time for graphs with sparse edge structures. It presents exact and approximate algorithms for complete-linkage, WPGMA, and average-linkage clustering using modular neighbor-heap structures and dynamic graph orientations to minimize computational cost. Experiments show major speedups (20x to 70x) without compromising clustering quality compared to traditional HAC methods.",
+  "classification": "Very helpful",
+  "relevance": "This work is highly applicable to SNP clustering for Mendelian randomisation. It offers scalable and accurate clustering methods that rely on graph-based similarity structures, fitting naturally with beta/Z-score based SNP similarity graphs. Its average-linkage clustering is particularly suitable for grouping SNPs based on shared association profiles, and the approximate algorithms can help detect and isolate noise clusters effectively.",
+  "key_points": [
+    "First nearly-linear time exact HAC algorithms for complete-linkage, WPGMA, and average-linkage clustering on graphs.",
+    "Dynamic neighbor-heap data structures and graph orientation techniques to maintain clustering efficiency.",
+    "Empirical evaluation shows 20x–70x speedups compared to traditional HAC implementations.",
+    "Approximate clustering variants allow tradeoffs between speed and strict merge accuracy.",
+    "Demonstrates scalability to millions of points and billions of edges using commodity hardware.",
+    "Highly modular framework, allowing adaptation to different graph types and linkage methods."
+  ]
+}

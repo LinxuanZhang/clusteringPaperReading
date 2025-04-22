@@ -1,0 +1,15 @@
+{
+  "title": "On the Price of Explainability for Some Clustering Problems",
+  "summary": "The paper studies the tradeoff between clustering quality and explainability, defining the 'price of explainability' as the unavoidable loss in objective function quality when clusters must be explainable via simple decision trees. They analyze this tradeoff for k-means, k-medians, k-centers, and maximum-spacing objectives, providing new upper and lower bounds. They also introduce Ex-Greedy, a new efficient greedy algorithm for constructing explainable k-means clusterings, showing that it performs better than prior methods across multiple datasets. Their work highlights that the cost of explainability is often small, especially in low dimensions.",
+  "classification": "Likely helpful",
+  "relevance": "This paper could help inform the design of SNP clustering algorithms if interpretability is desired — for example, if simple, rule-based SNP groupings (thresholds on beta/Z-scores) are preferred for biological or causal inference reasons. Although it does not specifically tackle noise detection or SNP association modeling, its ideas about balancing clustering quality against interpretability are conceptually useful for Mendelian randomisation studies that need transparent clustering methods.",
+  "key_points": [
+    "Defines and analyzes the 'price of explainability' for several clustering objectives (k-means, k-medians, k-centers, maximum-spacing).",
+    "Proposes Ex-Greedy, an efficient greedy algorithm for explainable k-means clustering.",
+    "Provides tighter upper and lower bounds on clustering quality loss when enforcing explainability.",
+    "Demonstrates empirically that Ex-Greedy often outperforms previous explainable clustering methods.",
+    "Highlights that in low dimensions, the cost of requiring explainability is often quite small.",
+    "Explores clustering structures based on decision-tree partitions, leading to interpretable cluster definitions.",
+    "Offers a framework that could be adapted to interpretable SNP clustering using association statistics."
+  ]
+}

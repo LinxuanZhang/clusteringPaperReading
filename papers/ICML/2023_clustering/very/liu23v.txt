@@ -1,0 +1,16 @@
+{
+  "title": "Dink-Net: Neural Clustering on Large Graphs",
+  "summary": "This paper introduces Dink-Net, a scalable deep graph clustering method capable of clustering graphs with millions of nodes. It unifies representation learning and clustering optimization using a node discriminate module and a neural clustering module. Dink-Net optimizes cluster assignments with two adversarial losses: cluster dilation (pushing clusters apart) and cluster shrink (pulling nodes toward centers), enabling mini-batch training and excellent scalability. Experiments show it outperforms other methods on massive datasets like ogbn-papers100M.",
+  "classification": "Likely helpful",
+  "relevance": "Although Dink-Net is designed for large graph node clustering, its techniques are highly relevant to clustering SNPs based on association scores. The dilation and shrink losses could be adapted to help distinguish meaningful causal SNP clusters from noise. Its focus on scalable mini-batch learning and unifying representation and clustering is particularly useful for high-dimensional SNP datasets. However, the reliance on graph structures would need to be adapted or interpreted differently in the SNP setting.",
+  "key_points": [
+    "Proposes Dink-Net, a scalable deep graph clustering framework.",
+    "Introduces cluster dilation loss and cluster shrink loss optimized adversarially.",
+    "Unifies representation learning and clustering in an end-to-end fashion.",
+    "Supports mini-batch training for handling extremely large graphs.",
+    "Demonstrates strong performance on ogbn-papers100M (111M nodes).",
+    "Could inspire methods for clustering SNPs by association strength while isolating noise clusters.",
+    "Official GitHub: https://github.com/yueliu1999/Dink-Net"
+  ],
+  "additional_notes": "Particularly strong ideas for building clustering-friendly embeddings and designing losses that could distinguish noise clusters; would require adaptation for non-graph SNP data."
+}

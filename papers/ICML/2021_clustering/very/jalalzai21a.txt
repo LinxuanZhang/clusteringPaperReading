@@ -1,0 +1,16 @@
+{
+  "title": "Feature Clustering for Support Identification in Extreme Regions",
+  "summary": "The paper develops MEXICO (Multivariate EXtreme Informative Clustering by Optimization), a novel method for clustering features that tend to be jointly large during extreme events. Working within the framework of multivariate Extreme Value Theory, they model feature clustering as an optimization problem over the probability simplex, promoting sparsity and disjointness among feature groups. Their method focuses on the extreme samples only, uses projected gradient ascent with regularization, and provides non-asymptotic convergence guarantees. MEXICO outperforms spectral clustering and spherical k-means on simulated extremes and improves anomaly detection performance on real-world datasets.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to the task of designing SNP clustering algorithms for Mendelian randomisation. The sparse clustering of features in extreme regions maps naturally to SNPs with large beta/Z-scores, and their method directly supports detecting and isolating noise clusters. Their approach would allow you to cluster meaningful SNP groups while filtering out spurious signals. The combination of a strong optimization framework, empirical performance, and theoretical guarantees makes this paper a strong methodological foundation for SNP clustering and pathway identification.",
+  "key_points": [
+    "MEXICO: A sparse optimization-based clustering method focused on extreme data points.",
+    "Uses empirical risk minimization with a loss function designed for extreme regions.",
+    "Optimization over probability simplex to enforce sparsity and mixture separation.",
+    "Projected gradient ascent with regularization to produce disjoint clusters.",
+    "Focuses on subspaces where extreme events are concentrated, aligning well with SNPs with large beta/Z-scores.",
+    "Provides theoretical convergence guarantees (non-asymptotic excess risk bounds).",
+    "Outperforms spectral clustering and spherical k-means in extreme feature clustering tasks.",
+    "Demonstrates strong anomaly detection capabilities using the learned extreme structure."
+  ]
+}

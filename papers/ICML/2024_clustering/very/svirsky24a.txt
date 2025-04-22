@@ -1,0 +1,15 @@
+{
+  "title": "Interpretable Deep Clustering for Tabular Data",
+  "summary": "This paper introduces Interpretable Deep Clustering (IDC), a two-stage framework for clustering tabular data with strong interpretability. IDC first uses a Gating Network and Autoencoder to select informative features for each data point via self-supervised learning. Then, it predicts cluster assignments using a coding-rate-based loss function to encourage compact, well-separated clusters. It provides explanations at both the sample and cluster levels, enabling faithful, diverse, and generalizable interpretations. The method demonstrates state-of-the-art clustering and interpretability on synthetic, biomedical, text, and physics tabular datasets, and is robust to lack of domain-specific augmentations.",
+  "classification": "Very helpful",
+  "relevance": "The IDC framework directly addresses the challenge of clustering high-dimensional SNP data using beta or Z-scores, with strong emphasis on removing noise and ensuring biological interpretability. Its local (sample-level) and global (cluster-level) feature selection mechanisms provide a blueprint for isolating meaningful genetic signals from noise, crucial for MR instrument selection and pathway elucidation.",
+  "key_points": [
+    "Introduces self-supervised feature selection using sample-specific gates for sparse reconstruction.",
+    "Uses a modified Maximum Coding Rate Reduction loss to enhance cluster compactness and separability.",
+    "Provides interpretability both at sample-level and cluster-level by identifying informative features.",
+    "Demonstrates strong performance across biomedical and general tabular datasets without relying on domain-specific augmentations.",
+    "Proposes metrics for measuring interpretability (diversity, faithfulness, uniqueness, generalizability).",
+    "Public code available on GitHub for replication and extension."
+  ],
+  "additional_notes": "Potential improvements include incorporating group sparsity to better handle correlated features, which could be relevant when dealing with linkage disequilibrium structures in SNP data."
+}

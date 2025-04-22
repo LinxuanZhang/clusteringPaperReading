@@ -1,0 +1,14 @@
+{
+  "title": "Efficient Online Learning for Dynamic k-Clustering",
+  "summary": "This paper studies clustering in dynamic environments where clients move unpredictably over time. It proposes Dynamic k-Clustering, an online learning problem where k centers are chosen at each time step to minimize connection cost. Key innovations include a fractional relaxation that allows efficient online no-regret learning and deterministic or randomized rounding techniques to map fractional solutions to discrete center placements. The algorithms achieve Θ(min(k, r)) regret, where r is the maximum number of clients at any time. Empirical results show practical low-regret behavior across dynamic distributions.",
+  "classification": "Likely helpful",
+  "relevance": "The core ideas — fractional relaxation, online subgradient optimization, and rounding schemes — can inspire efficient SNP clustering algorithms that tolerate noise and uncertainty. Although designed for dynamic client movement, the techniques could be adapted to static SNP beta/Z-score data. However, biological noise modeling and static association structures would need to be layered on top.",
+  "key_points": [
+    "Introduces Dynamic k-Clustering framed as an online learning problem.",
+    "Proposes fractional placement of centers, solved efficiently via convex optimization and subgradient methods.",
+    "Provides deterministic (Θ(k)) and randomized (Θ(r)) rounding schemes to obtain discrete center sets.",
+    "Proves impossibility of constant regret under standard complexity assumptions.",
+    "Demonstrates major empirical improvements in clustering dynamic client sets under various realistic scenarios.",
+    "Builds a general framework for extending fractional relaxation to other combinatorial online learning problems."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Multi-class Graph Clustering via Approximated Effective p-Resistance",
+  "summary": "This paper proposes a novel method for multi-class clustering on graphs using an approximation of effective p-resistance, a distance measure induced by the graph p-Laplacian. The method provides a fast approximation that becomes exact for trees and is scalable to large graphs. By tuning the parameter p, the method can bias towards clusters based on internal connectivity or shortest-path distances. A theoretical justification links p-resistance to semi-supervised learning, and empirical experiments demonstrate improved clustering performance compared to existing methods.",
+  "classification": "Very helpful",
+  "relevance": "This paper provides core ideas highly applicable to clustering SNPs using association measures. It suggests scalable distance-based clustering methods, offers strategies for isolating noise clusters, and connects the clustering objective to structural learning, all of which are critical for designing instruments for Mendelian randomisation using SNP clusters.",
+  "key_points": [
+    "Proposes fast approximated effective p-resistance for graph-based clustering",
+    "Theoretical bounds guarantee approximation quality; exact for tree graphs",
+    "Parameter p allows tuning between connectivity-based and path-based clusters",
+    "Semi-supervised learning interpretation supports clustering quality",
+    "Applies k-medoids to resistance distance matrix for clustering",
+    "Outperforms classical p-Laplacian spectral clustering and resistance-based clustering in experiments",
+    "Scalable and robust to noise in graph structure"
+  ]
+}

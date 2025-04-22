@@ -1,0 +1,16 @@
+{
+  "title": "Deep Conditional Gaussian Mixture Model for Constrained Clustering",
+  "summary": "This paper introduces DC-GMM, a deep generative model for constrained clustering that integrates domain knowledge in the form of probabilistic pairwise constraints. Using a VAE framework with a Gaussian Mixture Model prior, DC-GMM modifies the traditional ELBO objective to incorporate constraint information, allowing for soft, uncertain relationships between data points. The method achieves state-of-the-art clustering performance across image, text, and real-world medical datasets, and shows strong robustness to noisy constraint data. Its generative structure allows for not only clustering but also data generation and uncertainty estimation.",
+  "classification": "Very helpful",
+  "relevance": "DC-GMM directly addresses the challenge of clustering noisy or partially-labeled data using prior knowledge, making it highly relevant for SNP clustering tasks where beta or Z-score measures can serve as soft constraints. Its ability to model uncertainty in the constraints and its flexible, probabilistic structure provide a solid foundation for adapting it to cluster SNPs for causal inference while detecting noise clusters. Some adaptation would be needed to encode association measures into the model’s constraint format, but the overall framework is a strong match for the goals of clustering SNPs into instruments for Mendelian randomization.",
+  "key_points": [
+    "Proposes Deep Conditional Gaussian Mixture Model (DC-GMM) for constrained clustering.",
+    "Based on Variational Autoencoder (VAE) with Gaussian Mixture Model prior.",
+    "Incorporates soft, probabilistic pairwise constraints into the clustering process.",
+    "Introduces the Conditional ELBO objective for efficient training.",
+    "Demonstrates robustness to noisy or inconsistent constraints.",
+    "Achieves state-of-the-art clustering results on diverse benchmark datasets.",
+    "Supports clustering control by choosing different constraint sets.",
+    "Probabilistic and generative: enables uncertainty quantification and sample generation."
+  ]
+}

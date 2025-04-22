@@ -1,0 +1,16 @@
+{
+  "title": "CROCS: Clustering and Retrieval of Cardiac Signals Based on Patient Disease Class, Sex, and Age",
+  "summary": "CROCS is a supervised contrastive learning framework that learns attribute-specific prototypes to enable clustering and retrieval of cardiac signals based on multiple patient attributes like disease class, sex, and age. It employs a combination of hard and soft assignment strategies, encouraging signals to be close to prototypes sharing similar attributes. Additionally, CROCS arranges prototypes semantically using Hamming distances over attributes. The method outperforms state-of-the-art techniques in clustering accuracy and retrieval precision on ECG datasets and offers interpretable representations.",
+  "classification": "Very helpful",
+  "relevance": "CROCS is highly relevant to the goal of clustering SNP-level data. Its supervised contrastive learning approach, prototype-based clustering, soft assignment for noise tolerance, and prototype arrangement for semantic meaning can all be adapted for grouping SNPs based on association measures. Although the method is applied to categorical attributes and ECG signals, its concepts are generalizable and can be extended to continuous beta/Z-score data with modifications. This paper offers direct inspiration for building SNP clustering models that can robustly isolate meaningful groups and detect noise clusters.",
+  "key_points": [
+    "Introduces CROCS, a supervised contrastive learning framework for clustering and retrieval.",
+    "Learns clinical prototypes representing combinations of patient attributes (disease, sex, age).",
+    "Employs hard and soft assignment strategies to map signals to prototypes.",
+    "Incorporates a regularization mechanism for semantic arrangement of prototypes.",
+    "Demonstrates state-of-the-art clustering and retrieval performance on ECG datasets.",
+    "Prototype learning enables both clustering of unlabelled signals and attribute-specific retrieval.",
+    "Framework is robust to partial/noisy labels and enhances interpretability.",
+    "Techniques can inspire clustering strategies for noisy, partially informative SNP association data."
+  ]
+}

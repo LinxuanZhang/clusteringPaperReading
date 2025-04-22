@@ -1,0 +1,16 @@
+{
+  "title": "Simultaneous Graph Signal Clustering and Graph Learning",
+  "summary": "This paper proposes GRASCale, a method that simultaneously clusters graph signals and learns a separate graph structure for each cluster. It extends spectral clustering by incorporating both the pairwise similarities between signals and their smoothness over corresponding graphs. The optimization is performed using block coordinate descent with prox-linear updates and enhanced initialization through consensus clustering. Experiments on synthetic data and the MNIST dataset show that GRASCale outperforms previous methods like GLMM and K-Graphs in both clustering accuracy and graph learning quality, achieving better interpretability and robustness.",
+  "classification": "Very helpful",
+  "relevance": "The approach is highly applicable to SNP clustering for Mendelian randomisation. It offers a direct framework for clustering based on association measures while simultaneously learning the underlying relational structure, akin to pathways or causal modules. The smoothness constraint can help differentiate meaningful signal clusters from noise, aligning well with the objective of detecting and isolating noise clusters in SNP association data.",
+  "key_points": [
+    "Extends spectral clustering with graph signal smoothness regularization.",
+    "Simultaneous clustering and learning of cluster-specific graphs (GRASCale).",
+    "Efficient optimization using block coordinate descent and prox-linear updates.",
+    "Consensus clustering for better initialization and avoiding poor local minima.",
+    "Validated on synthetic data and MNIST digit clustering, achieving superior performance.",
+    "Applicable for heterogeneous data where different clusters may have different underlying structures.",
+    "Open-source code available: https://github.com/SPLab-aviyente/GRASCale"
+  ],
+  "notes": "While SNPs are features (not samples), mapping the idea of graph signals to SNPs via association matrices or effect size profiles can adapt GRASCale for SNP clustering."
+}

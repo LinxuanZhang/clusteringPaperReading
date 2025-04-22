@@ -1,0 +1,15 @@
+{
+  "title": "One Pass Late Fusion Multi-View Clustering",
+  "summary": "This paper introduces OP-LFMVC, an algorithm that unifies the learning of a consensus clustering matrix and the generation of cluster labels into a single optimization process. OP-LFMVC improves clustering quality and computational efficiency over previous multi-view clustering methods by tightly coupling partition learning and label generation. It is parameter-free, has provable convergence, and achieves strong generalization error bounds. Comprehensive experiments across benchmark datasets show it outperforms existing methods in clustering accuracy, robustness, and efficiency.",
+  "classification": "Likely helpful",
+  "relevance": "The unified optimization approach of OP-LFMVC could inspire designs for SNP clustering methods that avoid artifacts from post-hoc label assignment and detect meaningful clusters of SNPs based on association signals. Although OP-LFMVC is designed for multi-view data and not SNP-specific settings, its ideas around robustness, convergence guarantees, and tight partition-label coupling could help in developing specialized algorithms to detect and isolate noise clusters in causal inference studies like Mendelian randomisation.",
+  "key_points": [
+    "Proposes OP-LFMVC, a unified one-pass clustering method combining consensus learning and label generation.",
+    "Develops a four-step alternate optimization algorithm with theoretical convergence guarantees.",
+    "Proves a generalization error bound using Rademacher complexity analysis.",
+    "Demonstrates superior performance compared to state-of-the-art multi-view clustering algorithms across several datasets.",
+    "Algorithm is parameter-free and scales linearly with data size, suitable for large-scale clustering tasks.",
+    "Highlights the benefits of learning cluster labels directly rather than relying on post-processing (e.g., k-means).",
+    "Concepts of robust clustering and negotiation between partition and labels could inspire SNP clustering adaptations."
+  ]
+}

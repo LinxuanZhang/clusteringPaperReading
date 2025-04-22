@@ -1,0 +1,14 @@
+{
+  "title": "Nearly-Tight and Oblivious Algorithms for Explainable Clustering",
+  "summary": "This paper presents randomized algorithms for producing explainable clusterings with minimal loss in clustering quality compared to optimal, non-explainable clusterings. The algorithms create threshold trees based only on cluster centers, ignoring individual data points. They achieve nearly optimal guarantees for k-medians and k-means objectives and show strong lower bounds on how much worse explainable clustering must be. The methods are simple, fast, oblivious to data points, and robust to overfitting.",
+  "classification": "Likely helpful",
+  "relevance": "Although the focus is on explainability via decision trees, the algorithm's oblivious, center-based, and randomized structure offers valuable ideas for clustering SNPs using association measures like Z-scores or betas. Its robustness and efficiency make it a promising foundation, but adaptations would be needed for noise detection and biological relevance interpretation.",
+  "key_points": [
+    "Randomized threshold cuts separate clusters based on centers, not data points",
+    "Achieves O(log^2 k) approximation for k-medians and O(k log^2 k) for k-means",
+    "Oblivious to the number of data points, fast O(dk log^2 k) runtime",
+    "Strong theoretical lower bounds matching the upper bounds up to polylog factors",
+    "Potential for robustness against noise due to randomization",
+    "No direct mechanism for detecting noise clusters, would need extension"
+  ]
+}

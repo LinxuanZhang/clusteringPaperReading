@@ -1,0 +1,14 @@
+{
+  "title": "On Variational Inference in Biclustering Models",
+  "summary": "The paper studies parameter estimation in biclustering models using variational inference (VI). It develops tight theoretical error bounds showing that VI estimators achieve minimax optimal rates under mild assumptions. A coordinate ascent variational inference (CAVI) algorithm is proposed and analyzed, with proofs of local and partial global convergence. Empirical experiments validate the theoretical findings in Bernoulli and Poisson biclustering models.",
+  "classification": "Likely helpful",
+  "relevance": "The work provides important theoretical insights into handling latent structures and noisy data using VI, which could be adapted to the SNP clustering context. Although focused on biclustering, the convergence analysis and robust estimation ideas could help design SNP clustering algorithms that isolate meaningful genetic signals while managing noise. However, the method targets matrix biclustering rather than purely feature clustering and would require adaptation for SNP-level causal inference.",
+  "key_points": [
+    "Establishes minimax-optimal estimation bounds for variational inference in biclustering models.",
+    "Introduces and analyzes the CAVI algorithm with local and partial global convergence guarantees.",
+    "Addresses partial observation settings, providing robustness to missing data.",
+    "Demonstrates that VI can produce accurate cluster assignments under mild model assumptions.",
+    "Highlights sensitivity of convergence to initialization and model misspecification.",
+    "Provides detailed empirical validation on Bernoulli and Poisson synthetic datasets."
+  ]
+}

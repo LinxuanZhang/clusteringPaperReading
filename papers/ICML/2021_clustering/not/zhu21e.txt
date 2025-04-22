@@ -1,0 +1,14 @@
+{
+  "title": "Clusterability as an Alternative to Anchor Points When Learning with Noisy Labels",
+  "summary": "This paper proposes an alternative to the anchor-point-based methods for estimating noise transition matrices in supervised learning with noisy labels. It introduces a clusterability condition based on 2-nearest neighbor (2-NN) relationships and uses high-order consensuses among noisy labels to estimate the transition matrix. The proposed High-Order Consensus (HOC) estimator achieves better sample efficiency and estimation accuracy than traditional anchor-based methods and shows strong empirical performance on noisy datasets like CIFAR-10, CIFAR-100, and Clothing1M.",
+  "classification": "Likely helpful",
+  "relevance": "The paper introduces concepts like clusterability among neighbors and high-order consensus checking, which are valuable for designing clustering algorithms that need to be robust to noise — a critical need when clustering SNPs based on association statistics. However, it is primarily focused on supervised learning with label noise and not directly on clustering continuous SNP measures like beta or Z-scores. Therefore, while the techniques are adaptable, direct application would require method modification.",
+  "key_points": [
+    "Replaces anchor-point reliance with a 2-nearest neighbor clusterability assumption.",
+    "Introduces High-Order Consensus (HOC) method based on first-, second-, and third-order label agreements.",
+    "Provides theoretical guarantees (uniqueness of solution, sample complexity benefits).",
+    "Demonstrates effectiveness on synthetic and real noisy datasets (CIFAR-10/100, Clothing1M).",
+    "Potentially extendable to local instance-dependent noise settings, suggesting flexibility in different noise scenarios.",
+    "Open-source implementation available at https://github.com/UCSC-REAL/HOC."
+  ]
+}

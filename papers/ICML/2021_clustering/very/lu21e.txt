@@ -1,0 +1,15 @@
+{
+  "title": "ACE: Explaining Cluster from an Adversarial Perspective",
+  "summary": "This paper introduces ACE, a deep learning framework that integrates low-dimensional embedding, clustering, and cluster explanation into a single optimization process. ACE neuralizes the clustering step, making cluster assignments differentiable, and uses adversarial perturbations to find minimal explanatory feature sets. Applied to single-cell RNA-seq data, ACE outperforms baseline methods in finding highly discriminative, non-redundant gene panels even under noisy conditions. It generalizes to other domains such as image recognition, suggesting its wide applicability for interpretable clustering tasks.",
+  "classification": "Very helpful",
+  "relevance": "This paper is highly relevant to the task of clustering SNPs for Mendelian randomisation. ACE's method of jointly embedding, clustering, and explaining clusters through adversarial perturbations could be adapted to beta/Z-score SNP data to find compact, meaningful SNP groups while detecting and isolating noise clusters. Its robustness to noise and high-dimensionality, and its emphasis on interpretable clustering, align strongly with the goals of pathway discovery and causal inference.",
+  "key_points": [
+    "Proposes ACE: an integrated deep learning framework for embedding, clustering, and explaining data.",
+    "Neuralizes clustering to make it differentiable, enabling attribution of input features to cluster membership.",
+    "Uses adversarial perturbations to find minimal sets of important features (genes) for each cluster.",
+    "Handles batch effects and technical noise through autoencoder-based embedding (e.g., using SAUCIE).",
+    "Outperforms traditional methods (e.g., DESeq2, SHAP, SmoothGrad) in finding compact, non-redundant explanatory panels.",
+    "Successfully applied to both simulated and real biological datasets, and generalized to MNIST image data.",
+    "Strong candidate method for building interpretable, noise-resistant SNP clustering algorithms."
+  ]
+}
